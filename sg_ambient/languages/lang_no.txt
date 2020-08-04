@@ -1,0 +1,497 @@
+# units 
+ |hPa|hPa|
+ |inHg|inHg|
+ |mm|mm|
+ |mt|mt|
+ |feet|fot|
+ |cm|cm|
+ |km|km|
+ |km/h|km/t|
+ |kph|kpt|
+ |KM/H|KM/T|
+ |KMs|KMs|
+ |mile|mil|
+ |Miles|Miles|
+ |minutes|minutter|
+ |Hours|Timer|
+ |Hrs|Tms|
+ |Bft|Bft|
+ |Kts|Knp|
+ |KTS|KNP|
+ |MPH|MPT|
+ |M/S|M/S|
+ |hrs |tms |
+ |mins |min |
+ |min |min |
+ |secs |sek |
+ |C|C|
+ |F|F|
+ |Celsius|Celsius|
+ |Fahrenheit||
+ |/h|/t|
+ |/m|/m|
+
+# months
+ |Apr |Apr |
+ |Aug |Aug |
+ |Dec |Des |
+ |Feb |Feb |
+ |Jan |Jan |
+ |Jul |Jul |
+ |Jun |Jun |
+ |Mar |Mar |
+ |May |May |
+ |Nov |Nov |
+ |Oct |Okt |
+ |Sep |Sep |
+ |April|April|
+ |August|August|
+ |December|Desember|
+ |February|Februar|
+ |January|Januar|
+ |July|Juli|
+ |June|Juni|
+ |March|Mars|
+ |November|November|
+ |October|Oktober|
+ |September|September|
+
+# days
+ |Fri |Fre |
+ |Mon |Man |
+ |Sat |Lør |
+ |Sun |Søn |
+ |Thur |Tor |
+ |Thu |Tor |
+ |Tue |Tir |
+ |Wed |Ons |
+
+ |Monday|Mandag|
+ |Tuesday|Tirsdag|
+ |Wednesday|Onsdag|
+ |Thursday|Torsdag|
+ |Friday|Fredag|
+ |Saturday|Lørdag|
+ |Sunday|Søndag|
+
+#compass
+ |ENE|ØNØ|
+ |ESE|ØSØ|
+ |East|Øst|
+ |E|Ø|
+ |NE|NØ|
+ |NNE|NNØ|
+ |NW|NV|
+ |NNW|NNV|
+ |North|Nord|
+ |N|N|
+ |SE|SØ|
+ |SSE|SSØ|
+ |SSW|SSV|
+ |SW|SV|
+ |South|Sør|
+ |S|S|
+ |WNW|VNV|
+ |WSW|VSV|
+ |West|VEST|
+ |W|V|
+
+#common
+ |Updated|Oppdatert|
+ |Last Updated|Sist oppdatert|
+ |Offline|Offline|
+ |Online|På nett|
+ |Information|Informasjon|
+ |Close|Lukk|
+ |Distance|Avstand|
+ |Time|Tid|
+ |Description|Beskrivelse|
+ |here|her|
+ |Link|Lenk|
+ |Day|Dag|
+ |Today|I dag|
+ |Tonight|I natt|
+ |Yesterday|I går|
+ |Tomorrow|I morgen|
+ |Daily|Daglig|
+ |Hourly|Hver time|
+ |Last Hour|Siste time|
+ |History|Historie|
+ |Max|Max|
+ |Min|Min|
+ |Powered by|Drevet av|
+ |Night|Natt|
+ |Forecast for|Varsel for|
+ |by|av|
+ |Current|Gjeldene|
+ |All time|All tid|
+ |Average|Snitt|
+ |Avg |Snitt |
+ |Falling|Fallende|
+ |Rising|Stigende|
+ |Steady|Stødig|
+ |Force|Makt|
+ |forecast|varsel|
+ |No valid sensors found|Ingen gyldige sensorer funnet|
+ 
+# notifications
+ |Notification|Melding|
+ |Notifications|Varsler|
+ |UV-Index Caution|UV-indeks forsiktighet|
+ |Reduce Sun Exposure|Reduce Sun Exposure|
+ |Heat Exhaustion|Ekstrem hetefare|
+ |Heat Index Caution|Ekstrem hetefare|
+ |Wind Gusts Reaching Gale Force|Vindkastene når stormstyrken|
+ |Wind Gusts Becoming Strong Caution Required|Vindkastene blir sterke. Forsiktig påkrevd|
+ |Lightning Strike Alert Detected|Lynnedslagvarsel oppdaget|
+ |seconds ago|sekunder siden|
+
+# blocks 
+ |Forecast|Værvarsel|
+ |Earthquakes|Jordskjelv|
+ |Earthquake|Jordskjelv|
+ |Currentsky|Nåværende himmel|
+ |Airport|Flyplass|
+ |SunPosition|Solposisjon|
+ |Moon info|Månen info|
+ |Aurora|Aurora|
+ |Meteors|Meteorer|
+ |Rainfalltoday|Nedbør i dag|
+ |Radar|Radar|
+ |LiveWebCam|Live webkamera|
+ |Enlarge|Forstørre |
+ |Movie|Film|
+ |Solar - UV-Index - Lux|Solar - UV-indeks - Lux|
+ |Indoor Temperature|Innetemperatur|
+ |Our PurpleAir sensor|PurpleAir-sensoren vårr|
+ |Our Luftdaten AQ sensor|Luftdaten-sensoren vår|
+ |Official AQ sensor station|Offisiell sensostasjon|
+ |Moonphase information|Måne fase |
+ |Our WXSIM forecast|Vår WXSIM-varsel|
+ |Environment Canada forecast|Environment Canada varsel|
+ |WeatherUnderground forecast|WeatherUnderground varsel|
+ |Details|Detaljer|
+ |Texts|Tekster|
+ |Official weather alarms|Offisielle værvarsler|
+ |Max-Min Temperature|Max-Min temperatur|
+ |Annual Rainfall|Årlig nedbør|
+ |Last Earthquake|Siste jordskjelv|
+ |Station weather history|Stasjons værhistorie|
+ |Wind - Gust|Vind - Vindkast|
+ |UV Guide|UV-guide|
+ 
+# advisory
+ |Lightning Strike Nearby|Lynnedslag i nærheten|
+ |Possible Storm Approaching|Mulig storm som nærmer seg|
+ |Caution|Forsiktighet|
+ |Below Freezing|Under frysepunktet|
+ |Firerisk|Brannfare|
+ |Possible|Mulig|
+ |Viewing Possible|Visning mulig|
+ |Radio Aurora Possible|Radio Aurora mulig|
+ |Expect|Forvent|
+ |This Week|Denne uka|
+ |This hour|Denne timen|
+ |(Severe) thunderstorms possible|(Alvorlig) tordenvær mulig|
+ |Flooding Possible|Flom mulig|
+ |Have a nice day|Ha en fin dag|
+
+#lightning
+ |Lightning|Lyn|
+ |Nearby Lightning|Lyn i nærheten|
+ |Nearby|nærliggende|
+ |Total strikes|Total lynnedslag|
+ |Latest strike at|Siste lynnedslag kl|
+ |Last 3 hr|Siste 3 timer|
+ |Direction|Direction|
+
+#bft_names
+ |Calm|Stille|
+ |Light air|Flau vind|
+ |Light breeze|Svak Vind|
+ |Gentle breeze|Bris|
+ |Moderate breeze|Laber Bris|
+ |Fresh breeze|Frisk bris|
+ |Strong breeze|Liten Kuling|
+ |Near gale|Stiv Kuling|
+ |Gale force|Storm kraft|
+ |Strong gale|Liten Storm|
+ |Storm|Full Storm|
+ |Violent storm|Sterk Storm|
+ |Hurricane|Orkan|
+
+#w-names
+ |Barometer|Barometer|
+ |Pressure|Trykk|
+ |Temperature|Temperatur|
+ |Gust|Vindkast|
+ |Precipitation|Nedbør|
+ |precipitation|nedbør|
+ |Windspeed|Vindfart|
+ |Winddirection|Vindretning|
+ |UV index|UV index|
+ |UVI|UVI|
+ |UV|UV|
+ |Humidity|Luftfuktighet|
+ |Solar|Sol|
+ |Heatindex|Varmeindeks|
+ |Wet Bulb|Våte pære|
+ |Wind|Vind|
+ |Wind Run|Vindløp|
+ |Windchill|Windchill|
+ |Dewpoint|Duggpunkt|
+ |Feels|øles|
+ |Feels like|Føles som|
+ |Indoor|Indoor|
+ |Rate|Fart|
+ |Rainfall|Nedbør|
+ 
+#meteors
+ |Any nearby ambientlight, Moonlight can make it difficult viewing.|Alt omgivelseslys eller måneskinn i nærheten kan gjøre det vanskelig å se på.|
+ |Meteors are best viewed during the night hours, though meteors enter the atmosphere at any time of the day.|Meteorer sees best i løpet av nattetimene, selv om meteorer kommer inn i atmosfæren når som helst på dagen.|
+ |Meteor showers are best viewed away from the city lights.|Meteordusjer er best sett vekk fra byens lys.|
+ |They are just harder to see in the daylight apart from dawn and dusk.|De er bare vanskeligere å se i dagslys bortsett fra daggry og skumring.|
+
+ |Active Sky Events|Aktiv Sky-hendelser|
+ |No Active Sky Events|Ingen aktive Sky-hendelser|
+ |Current Events|Aktuelle hendelser|
+ |Next Events|Neste hendelsers|
+ |Annual Meteor Showers|Årlig Meteorregn|
+ |Meteor Shower|Meteorregn|
+ |Meteor Showers|Meteorregn|
+ 
+ |Guide|Guide|
+ |Peak|Peak|
+ |Visible|Synlig|
+ |Eclipse|Formørkelse|
+ |Lunar|Lunar|
+ |Total|Total|
+ |Annular|ring|
+ |Partial|Delvis|
+ 
+ |Wikipedia|Wikipedia|
+ |Data Provided by|Data Provided by|
+
+#aurora
+ |Visual Aurora Borealis/Northern Lights and VHF Radio Aurora Indicators|Visuelle Aurora Borealis / Nordlys og VHF Radio Aurora Indikatorer|
+ |Geomagnetic Storm|Geomagnetisk storm|
+ |KP-PLANETARY INDEX|KP-PLANETARINDEKS|
+ |Radio Aurora Indicators|Radio Aurora Indikatorer|
+ |KP-INDEX|KP-INDEKS|
+ |A-INDEX|A-INDEKS|
+ |Geomagnetic Severe Storm|Alvorlig geomagnetisk storm|
+ |Geomagnetic Major Storm|Major geomagnetisk Storm|
+ |Minor|Liten|
+ |Weak|Svak|
+ |Quiet No|Stille Nei|
+ |Excellent Aurora Viewing Possible|Utmerket Aurora visning mulig|
+ |Mid to High Latitude Aurora Viewing Possible|Midt til høy bredde Aurora visning mulig|
+ |High Latitude Aurora Viewing Possible|Aurora med høy bredde mulig|
+ |Weak High Latitude Aurora Viewing Possible|Svak Aurora-visning med høy bredde mulig|
+ |No Aurora|Ingen Aurora|
+ |NOT ACTIVE|NOT AKTIV|
+ |RADIO AURORA ACTIVE|RADIO AURORA AKTIV|
+ |Severe Storm|Alvorlig storm|
+ |Major Storm|Stor storm|
+ |Strong Radio Aurora|Sterk Radio Aurora|
+ |Mid-High Latitude Radio Aurora|Midt til høy breddegradioraora|
+ |Radio Aurora|Radio Aurora|
+ |High Latitude Radio Aurora|Radio aurora med høy breddegrad|
+ |High Latitude Weak Radio Aurora|Høy aorora med svak breddegrad|_todotodo
+ |No Radio Aurora|Ingen radio-aurora|
+
+#==
+
+#airquality                                              
+ |Air Quality|Luftkvalitet|
+ |Air quality sensor|Luftkvalitetssensor|
+ |Air Quality data from our own sensor|Luftkvalitetsdata fra vår egen sensor|
+ |Station ID|Station ID|
+ |Information on Air Quality|Informasjon om luftkvalitet|
+ |GoodAQ|God luftkvalitet|
+ |ModerateAQ|Moderat luftkvalitet|
+ |UnhealthyFSAQ|Usunt for noen|
+ |UnhealthyAQ|Usunn luftkvalitet|
+ |VeryUnhealthyAQ|Veldig usunn luftkvalitet|
+ |HazordousAQ|Farlig luftkvalitet|
+ |Precautions Required|Forholdsregler som kreves|
+ |Critical Conditions|Kritiske forhold|
+ |Life Threatening|Livstruende|
+ |Current cloudbase|Nåværende skybase|
+ |Information on Cloudbase|Informasjon om skybase|
+ |Based on a common formula using the temperature & dewpoint, as recorded realtime from this weather station, an estimated height of the cloudbase is calculated.|Basert på en vanlig formel som bruker temperatur og duggpunkt, som registrert i sanntid fra denne værstasjonen, beregnes en estimert høyde på skybasen.|
+ |It is not a accurate tool it is a relative indicator.|Det er ikke et nøyaktig verktøy, det er en relativ indikator.|
+
+#earthquake
+ |Earthquake information courtesy of|Informasjon om jordskjelv med tillatelse av|
+ |Magnitude|Omfanget|
+ |Depth|Dybde|
+ |Coordinates|Koordinater|
+ |Table is sorted by|Tabell er sortert etter|
+ |Click to sort the table on|Klikk for å sortere tabellen på|
+ |or on|eller på|
+ |MinorE|Mindre jordskjelv|
+ |LightE|Lett jordskjelv|
+ |ModerateE|Moderat jordskjelv|
+ |StrongE|Sterkt jordskjelv|
+ |MajorE|Stort jordskjelv|
+ |GreatE|Stor jordskjelv|
+ |RegionalE|Regional|
+ |Largest|Største|
+ 
+#sun/moon
+ |Azimuth|Azimuth|
+ |Moon Phase / Sun-Moon  Rise-Set Information|Månefase - sol og måne stige og angi informasjon|
+ |Moon Rise/Set Information|Månen stiger og angi informasjon|
+ |Sun Rise/Set Information|Solen står opp og angir informasjon|
+ |Current Moon cycle is|Nåværende månesyklus er|
+ |day before|dagen før|
+ |Moonphase|Månefase|
+ |Moonrise|Månen opp|
+ |Moonset|Månen ned|
+ |SunRise/Set|Solen står opp og angir|
+ |Sunrise|Soloppgang|
+ |Sun rose at|Sola steg kl|
+ |Sun will set|Solen vil gå|
+ |Sunset|Solnedgang|
+ |Sun set|Solnedgang|
+ |Daylight|Dagslys|
+ |Darkness|Mørke|
+ |Next Full Moon|Neste fullmåne|
+ |Next New Moon|Neste nye måne|
+ |days old|dager gammel|
+ |Till Sunrise|Till soloppgang|
+ |Till Sunset|Till Solnedgang|
+ |Of Daylight|Av dagslys|
+ |Luminance|Luminans|
+ |Elevation|Elevation|
+ |Estimated|Antatt|
+ |New Moon|Nymåne|
+ |Waxing Crescent|Kommende måne|
+ |First Quarter|Første kvartal|
+ |Waxing Gibbous|Voksende Gibbous|
+ |Full Moon|Fullmåne|
+ |Waning Gibbous|Minkende Trekvartmåne|
+ |Third Quarter|Third Quarter|
+ |Waning Crescent|Avtagende måne|
+ |Moon|Måne|
+ |Sun|Søn|
+ 
+#UV/solar
+ |Solar Radiation|Sol Stråling|
+ |Current UVINDEX Advisory|Nåværende rådgivende UV-indeks|
+ |CURRENT UVINDEX|Nåværende UV-indeks|
+ |Lux Brightness|Lux lysstyrke|
+ |Excellent and Sustainable|Utmerket og bærekraftig|
+ |Good and Sustainable|Bra og bærekraftig|
+ |Poor |Dårlig |
+ |Solar Energy Replenishment|Påfylling av solenergi|
+ |Good to Excellent|God til utmerket|
+ |Moderate to Good|Moderat til god|
+ |Low to Moderate|Lav til moderat|
+ |Low |Lav |
+ |None |Ingen |
+ |Very high risk of harm from unprotected sun exposure. Take extra precautions.|Svært høy risiko for skade på grunn av ubeskyttet soleksponering. Ta ekstra forholdsregler.|
+ |High risk of harm from unprotected sun exposure.|Høy risiko for skade på grunn av ubeskyttet soleksponering.|
+ |Moderate risk of harm from unprotected sun exposure.|Moderat risiko for skade på grunn av ubeskyttet soleksponering.|
+ |Low danger from the sun&apos;s UV rays for the average person|Lav fare fra solens UV-stråler for den gjennomsnittlige personen|
+ |Ultraviolet|Ultrafiolett |
+ |Brightness|Lysstyrke|
+ |Lux|Lux|
+ |Index|Indeks|
+ |Lux measurement|Lux måling|
+ |Measures the approximate human eye response to light under a variety of lighting conditions.|Måler den omtrentlige menneskelige øye-responsen på lys under en rekke lysforhold.|
+ |The total amount of all the light measured is known as the "luminous flux".|Den totale mengden av alt målt lys er kjent som "lysstrømmen".|
+
+#metar
+ |Airport-code|Flyplass-kode|
+ |Current Conditions|Nåværende forhold|
+ |Heavy |Tung |
+ |Light |Lett |
+ |Location|Plassering|
+ |Visibility|Sikt|
+ |Metar Aviation Weather Data|Metar værinformasjon om luftfart|
+ 
+# menu
+ |Menu|Meny|
+ |Home|Hjem|
+ |Settings|Innstillinger|
+ |FIRST SETUP (protected)|OPPSETT (beskyttet)|
+ |USER PREFERENCES|BRUKERPREFERANSER|
+ |Dark Theme|Mørkt tema|
+ |Light Theme|Lett tema|
+ |Station Theme|Stasjonstema|
+ |Imperial|Keiserlige|
+ |Metric|Metrisk|
+ |UK (MPH)|UK (MPH)|
+ |Scandinavia|Skandinavia (M/T)|
+ |Select language|Velg språk|
+ |EXTRAS|EKSTRA|
+ |Web Cam|Webkamera|
+ |Contact Info|Kontaktinfo|
+ |SUPPORT|BRUKERSTØTTE|
+ |Maintained by|Vedlikeholdt av|
+ 
+# bio
+ |Contact information|Kontaktinformasjon|
+ |Mail|Mail|
+ |Twitter|Twitter|
+ |Website|Nettsted|
+
+# graphs
+ |High|høy|
+ |Low|Lav|
+ |for this day|for denne dagen|
+ |for this month|for denne måneden|
+ |for this year|for i år|
+ |Data from our weatherstation|Data fra værstasjonen|
+
+#conditions 
+ |Conditions|Forhold|
+ |drizzle|duskregn|
+ |rain|regn|
+ |freezing|frysing|
+ |snow|snø|
+ |showers|byger|
+ |squall|squall|
+ |haze|tåke|
+ |fog|tåke|
+ |mist|tåke|
+ |ice_pellets|Is pellets|
+ |ice_crystals|iskrystaller|
+ |hail|hagl|
+ |thunderstorm|tordenvær|
+ |lightning|lyn|
+ |storm|storm|
+ |dust|støv|
+ |sand|sand|
+ |tornado|tornado|
+ |water_spout|vanntut|
+ |smoke|røyk|
+ |vulcanic_ash|vulkansk aske|
+ |blowing|blåser|
+ |widespread|utbredt|
+ |heavy|tung|
+ |light|lys|
+ |moderate|moderat|
+ |steady|stødig|
+ |or|eller|
+ |unknown|ukjent|
+
+# conditions clouds
+ |Clear|Klart|
+ |Partly Cloudy|Delvis overskyet|
+ |Mostly Scattered Clouds|Stort sett spredte skyer|
+ |Mostly Cloudy|For det meste Overskyet |
+ |Overcast|Overskyet |
+
+# #####
+ |from|fra|
+ |Never base important decisions that could result in harm to people or property on this weather information.|Baser aldri viktige beslutninger som kan føre til skade på mennesker eller eiendommer på denne værinformasjonen.|
+
+
+
+
+ 
+ 
+

@@ -1,0 +1,27 @@
+2020-05-05	PWS_easyweathersetup.php|00|2020-05-05|';  # DWLv2api | ! remove "-error | updated defaults | release 2004
+2020-05-05	PWS_livedata.php|00|2020-05-05|';  # DWLv2api |windrun | standardized $et_today |release 2004
+2020-05-05	PWS_load_files.php|00|2020-05-05|';  # DWLv2api | minor changes | release 2004
+2020-05-05	PWS_settings.php|01|2020-05-05|';  # DWLv2api | release 2004
+2020-05-05	extra_temp_block.php|00|2020-05-05|';  # release 2004 (05-05) | remove double lang 
+2020-05-04	PWS_DailyHistory.php|00|2020-05-04|'; # precesion | release 2004  
+2020-05-03	PWS_index2.php|00|2020-05-03|';  # empty last block | release 2004 
+2020-05-03	earthequake_c_block.php|00|2020-05-03|';  # add sort distance | release 2004
+2020-05-02	rain_c_block.php|00|2020-05-02|';  #  added  ET | release 2004 
+2020-05-02	wind_c_block.php|00|2020-05-02|';  #  added windrun | release 2004
+2020-04-30	PWS_graph_xx.php|00|2020-04-30|'; # change °  to &deg; |  release 2004
+2020-04-30	ccn_shared.php|00|2020-04-30|';   # change ° to &deg; | missing 1hrfct | commented debug code | release 2004 
+2020-04-29	fct_yrno_shared.php|00|2020-04-29|';  # ADDED extra icon translations | 2004
+2019-04-27	AQ_gov_c_block.php|00|2019-04-27|';  # overflow hidden | fontsize table |  release 2004  
+2020-04-26	ccn_cltraw_block.php|00|2020-04-26|';   # missing one hr fct  | release 2004
+2020-04-23	ccn_metar_block|00|2020-04-23|';  #  missing one hr fct | release 2004
+2020-04-23	PWS_blocks.php|00|2020-04-23|'; # extra block | release 2004 
+2020-04-23	PWS_cron_stationcron.php|00|2020-04-23|';   #  n/a values | release 2004 
+2020-04-22 	aurora_popup.php|00|2020-04-22|';  #  add lang() for texts |release 2004
+
+2020-04-21    'ccn_shared.php|00|2020-04-21|';   # commented debug code | release 2004 
+2020-04-21    'WLCOM_summary.php|00|2020-04-21|';  # color header | ET moved to extra sensors | release2004
+2020-04-18    'fct_wxsim_shared.php|00|2020-04-18|';  # renamed | release 2004 
+2019-04-17    'AQ_gov_c_block.php|00|2019-04-17|';  # fontsize table |  release 2004  
+2020-04-16    'PWS_easyweathersetup.php|00|2020-04-16|';  # remove "-error | updated defaults | release 2004
+2020-04-16    'indoor_c_block.php|00|2020-04-16|';  # &deg;  for indoor temp in house 
+2020-04-15    'soil_tmp_mst_small.php|00|2020-04-15|';  # typos removed | release2004

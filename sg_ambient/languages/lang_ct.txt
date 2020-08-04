@@ -1,0 +1,493 @@
+# units 
+ |hPa|hPa| 
+ |inHg|inHg|
+ |mm|mm| 
+ |mt|mt|
+ |feet| peus |
+ |cm|cm| 
+ |km|km| 
+ |km/h|km/h|
+ |kph|kph|
+ |KM/H|KM/H|
+ |KMs|KM| 
+ |mile|milla|
+ |Miles|Milles| 
+ |minutes|minuts|
+ |Hours|Hores| 
+ |Hrs|Hrs| 
+ |Bft|Bft|
+ |Kts|Nus| 
+ |KTS|NUS|
+ |MPH|MPH| 
+ |M/S|M/S| 
+ |hrs | Hrs |
+ |mins |mins | 
+ |min | Min |
+ |secs |secs |
+ |C|C| 
+ |F|F| 
+ |Celsius|Celsius| 
+ |Fahrenheit|Fahrenheit| 
+ |/h|/h| 
+ |/m|/m| 
+# months
+ |Apr |Abr |
+ |Aug |Ago |
+ |Dec |Des |
+ |Feb |Feb |
+ |Jan |Gen|
+ |Jul |Jul |
+ |Jun |Jun |
+ |Mar |Mar |
+ |May |Maig |
+ |Nov |Nov |
+ |Oct |Oct |
+ |Sep |Sep |
+ |April|Abril| 
+ |August|Agost| 
+ |December|Desembre| 
+ |February|Febrer| 
+ |January|Gener| 
+ |July|Juliol| 
+ |June|juny| 
+ |March|Març| Març
+ |November|Novembre| 
+ |October|Octubre|
+ |September|Setembre| 
+
+# days
+ |Fri |Dive | 
+ |Mon |Dill | 
+ |Sat |Diss | 
+ |Sun |Dium | 
+ |Thur |Dijo | 
+ |Thu |Dijo | 
+ |Tue |Dima | 
+ |Wed |Dime | 
+
+ |Monday|Dilluns| 
+ |Tuesday|Dimarts| 
+ |Wednesday|Dimecres| 
+ |Thursday|Dijous| 
+ |Friday|Divendres| 
+ |Saturday|Dissabte| 
+ |Sunday|Diumenge| 
+
+#compass
+ |ENE|ENE| 
+ |ESE|ESE| 
+ |East|Est| 
+ |E|E| 
+ |NE|NE| 
+ |NNE|NNE| 
+ |NW|NO| 
+ |NNW|NNO| 
+ |North|Nord| 
+ |N|N| 
+ |SE|SE| 
+ |SSE|SSE| 
+ |SSW|SSO| 
+ |SW|SO| 
+ |South|Sud| 
+ |S|S| 
+ |WNW|ONO| 
+ |WSW|OSO| 
+ |West|Oest| 
+ |W|O| 
+
+#common
+ |Updated|Actualització|
+ |Last Updated|Última actualització| 
+ |Offline|Fora de línia| 
+ |Online|En línia| 
+ |Information|Informació| 
+ |Close|Tanca| 
+ |Distance|Distància| 
+ |Time|Temps| 
+ |Description|Descripció| 
+ |here|aquí| 
+ |Link|Enllaç| 
+ |Day|Dia| 
+ |Today|Avui|
+ |Tonight|Aquesta nit| 
+ |Yesterday|Ahir|
+ |Tomorrow|Demà| 
+ |Daily|Diàriament| 
+ |Hourly|Per hora| 
+ |Last Hour|Última hora| 
+ |History|Història| 
+ |Max|Màx|
+ |Min|Mín|
+ |Powered by|Impulsat per| 
+ |Night|Nit| 
+ |Forecast for|Previsió a| 
+ |by|per| 
+ |Current|Actual|
+ |All time|Tot el temps| 
+ |Average|Mitjana| 
+ |Avg |Mitjana | 
+ |Falling|Caient|
+ |Rising|Pujant|
+ |Steady|Estable|
+ |Force|Força| 
+ |forecast|previsió|
+ |No valid sensors found|No s’han trobat sensors vàlids| 
+ 
+# notifications
+ |Notification|Notificació| 
+ |Notifications|Notificacions| 
+ |UV-Index Caution|UV-índex Precaució| 
+ |Reduce Sun Exposure|Reduir l’exposició al sol| 
+ |Heat Exhaustion|Esgotament de calor| 
+ |Heat Index Caution|Atenció a l esgotament de calor| 
+ |Wind Gusts Reaching Gale Force|Ràfegues del vent que assoleixen la força d'encaix| 
+ |Wind Gusts Becoming Strong Caution Required|Es fan forts els vents. Precaució obligatòria| 
+ |Lightning Strike Alert Detected|S'ha detectat una alerta de llamps|
+ |seconds ago|ara fa segons| 
+
+# blocks 
+ |Forecast|Predicció|
+ |Earthquakes|Terratrèmols|
+ |Earthquake|Terratrèmol|
+ |Currentsky|Cel actual|
+ |Airport|Aeroport|
+ |SunPosition|Posició del Sol|
+ |Moon info|Informació de la lluna|
+ |Aurora|Aurora| 
+ |Meteors|Meteors|
+ |Rainfalltoday|Precipitació Avui|
+ |Radar|Radar|
+ |LiveWebCam|Càmera web en directe| 
+ |Enlarge|Ampliar|
+ |Movie|Pel·lícula| 
+ |Solar - UV-Index - Lux|Solar - Índex UV - Lux|
+ |Indoor Temperature|Temperatura interior|
+ |Our PurpleAir sensor|El nostre sensor PurpleAir|
+ |Our Luftdaten AQ sensor|El nostre sensor Luftdaten QA|
+ |Official AQ sensor station|Estació de QA oficial|
+ |Moonphase information|Informació en fase lluna|
+ |Our WXSIM forecast|La nostra previsió WXSIM|
+ |Environment Canada forecast|Previsió per Environment Canada|
+ |WeatherUnderground forecast|Previsió per WeatherUnderground|
+ |Details|Detalls|
+ |Texts|Textos|
+ |Official weather alarms|Alertes meteorològiques oficials|
+ |Max-Min Temperature|Temperatura màxima-mínima|
+ |Annual Rainfall|Precipitació anual|
+ |Last Earthquake|Terratrèmol més recent|
+ |Station weather history|Station weather history|
+ |Wind - Gust|Vent - Ràfec|
+ |UV Guide|Guia UV|
+ 
+# advisory
+ |Lightning Strike Nearby|Vaga de llamps a prop|
+ |Possible Storm Approaching|Possible aproximació de tempestes| 
+ |Caution|Precaució|
+ |Below Freezing|Per sota de la congelació|
+ |Firerisk|Risc d’incendi|
+ |Possible|Possible|
+ |Viewing Possible|Visualització possible| 
+ |Radio Aurora Possible|Ràdio Aurora Possible|
+ |Expect|Espere|
+ |This Week|Aquesta setmana|
+ |This hour|Aquesta hora|
+ |(Severe) thunderstorms possible|Possibles tempestes (fortes)|
+ |Flooding Possible|Inundació possible|
+ |Have a nice day|Que tinguis un bon dia|
+#lightning
+ |Lightning|Llamp|
+ |Nearby Lightning|Llamp proper|
+ |Nearby|A prop|
+ |Total strikes|Total de llamps|
+ |Latest strike at|Últim llamp a|
+ |Last 3 hr|Últimes 3 h.|
+ |Direction|Direcció|
+
+#bft_names
+ |Calm|Tranquil|
+ |Light air|Aire lleuger|
+ |Light breeze|Brisa lleugera|
+ |Gentle breeze|Brisa suau|
+ |Moderate breeze|Brisa moderada|
+ |Fresh breeze|Brisa fresca|
+ |Strong breeze|Forta brisa|
+ |Near gale|Prop vendaval|
+ |Gale force|Força vendaval|
+ |Strong gale|Encaix fort|
+ |Storm|Tempesta|
+ |Violent storm|Tempesta violenta|
+ |Hurricane|L'huracà|
+
+#w-names
+ |Barometer|Baròmetre|
+ |Pressure|Pressió|
+ |Temperature|Temperatura|
+ |Gust|Ràfega|
+ |Precipitation|Precipitacions|
+ |precipitation|precipitacions|
+ |Windspeed|Velocitat del vent|
+ |Winddirection|Direcció del vent|
+ |UV index|Índex UV|
+ |UVI|UVI|
+ |UV|UV|
+ |Humidity|Humitat|
+ |Solar|Solar|
+ |Heatindex|Índex de calor|
+ |Wet Bulb|Bombeta hum.|
+ |Wind|Vent|
+ |Wind Run|Recorregut total del vent|
+ |Windchill|Temp. sensació|
+ |Dewpoint|Rosada|
+ |Feels|Sensació|
+ |Feels like|Sensació|
+ |Indoor|Interior|
+ |Rate|Valorar|
+ |Rainfall|Precipitació|
+ 
+#meteors
+ |Any nearby ambientlight, Moonlight can make it difficult viewing.|Qualsevol llum ambiental propera o llum de la lluna pot dificultar la seva visualització.| 
+ |Meteors are best viewed during the night hours, though meteors enter the atmosphere at any time of the day.|Els meteorits es veuen millor durant les hores nocturnes, tot i que els meteorits entren a l'atmosfera a qualsevol hora del dia.|
+ |Meteor showers are best viewed away from the city lights.|Les dutxes meteorològiques es veuen més bé lluny dels llums de la ciutat.|
+ |They are just harder to see in the daylight apart from dawn and dusk.|Són més difícils de veure a la llum del dia a part de l'alba i el capvespre.|
+
+ |Active Sky Events|Esdeveniments actius del cel|
+ |No Active Sky Events|No hi ha esdeveniments actius al cel|
+ |Current Events|Esdeveniments actuals|
+ |Next Events|Pròxims esdeveniments|
+ |Annual Meteor Showers|Pluja de meteorits anual|
+ |Meteor Shower|Pluja de meteorits|
+ |Meteor Showers|Pluja de meteorits|
+ 
+ |Guide|Guia|
+ |Peak|Pic|
+ |Visible|Visible|
+ |Eclipse|Eclipsi|
+ |Lunar|Lunar|
+ |Total|Total|
+ |Annular|Anular|
+ |Partial|Parcial|
+ 
+ |Wikipedia|Viquipèdia|
+ |Data Provided by|Dades subministrades per |
+
+#aurora
+ |Visual Aurora Borealis/Northern Lights and VHF Radio Aurora Indicators|Visual Aurora Borealis o Northern Lights i VHF Radio Aurora Indicators|
+ |Geomagnetic Storm|Tempesta geomagnètica|
+ |KP-PLANETARY INDEX|ÍNDEX PLANETARI KP|
+ |Radio Aurora Indicators|Indicadors de Radio Aurora|
+ |KP-INDEX|ÍNDEX KP| 
+ |A-INDEX|ÍNDEX A| 
+ |Geomagnetic Severe Storm|Tempesta geomagnètica severa Severe Storm|
+ |Geomagnetic Major Storm|Tempesta Geomagnètica Major|
+ |Minor|Menor|
+ |Weak|Feble|
+ |Quiet No|Tranquil,  No| 
+ |Excellent Aurora Viewing Possible|Excel·lent visualització Aurora possible|
+ |Mid to High Latitude Aurora Viewing Possible|Possibilitat de visualització Aurora de mitja a alta latitud|
+ |High Latitude Aurora Viewing Possible|Possibilitat de visualització Aurora d'alta latitud|
+ |Weak High Latitude Aurora Viewing Possible|Possible visualització Aurora amb una elevada latitud|
+ |No Aurora|No Aurora|
+ |NOT ACTIVE|NO ACTIU|
+ |RADIO AURORA ACTIVE|RADIO AURORA ACTIU|
+ |Severe Storm|Tempesta severa| 
+ |Major Storm|Tempesta important| 
+ |Strong Radio Aurora|Ràdio Aurora forta| 
+ |Mid-High Latitude Radio Aurora|Radio Aurora Latitud mitjana-alta| 
+ |Radio Aurora|Radio Aurora|
+ |High Latitude Radio Aurora|Radio Aurora Alta Latitud|
+ |High Latitude Weak Radio Aurora|Radio Aurora Alta Latitud dèbil|
+ |No Radio Aurora|No Radio Aurora|
+
+#airquality                                              
+ |Air Quality|Qualitat de l'aire|
+ |Air quality sensor|Sensor de qualitat de l’aire|
+ |Air Quality data from our own sensor|Dades de qualitat de l’aire del nostre propi sensor|
+ |Station ID|ID d’estació| 
+ |Information on Air Quality|Informació sobre la qualitat de l’aire| 
+ |GoodAQ|Bona qualitat de l’aire|
+ |ModerateAQ|Qualitat de l’aire moderada|
+ |UnhealthyFSAQ|No és saludable per a la qualitat de l’aire|
+ |UnhealthyAQ|Qualitat de l’aire no saludable|
+ |VeryUnhealthyAQ|Qualitat de l’aire molt poc saludable|
+ |HazordousAQ|Qualitat de l’aire perillós|
+ |Precautions Required|Precaucions obligatòries|
+ |Critical Conditions|Condicions crítiques|
+ |Life Threatening|Amenaça per a la vida|
+ |Current cloudbase|Base actual de núvols|
+ |Information on Cloudbase|Informació sobre Cloudbase|
+ |Based on a common formula using the temperature & dewpoint, as recorded realtime from this weather station, an estimated height of the cloudbase is calculated.|A partir d'una fórmula habitual que utilitza la temperatura i el punt de rosada, segons es registra en temps real des d'aquesta estació meteorològica, es calcula una alçada estimada de la base del núvol.|
+ |It is not a accurate tool it is a relative indicator.|No és una eina precisa, sinó que és un indicador relatiu.|
+
+#earthquake
+ |Earthquake information courtesy of|Informació de terratrèmols per cortesia|
+ |Magnitude|Magnitud|
+ |Depth|Profunditat|
+ |Coordinates|Coordenades|
+ |Table is sorted by|La taula està ordenada per|
+ |Click to sort the table on|Feu clic per ordenar la taula en|
+ |or on|o|
+ |MinorE|Terratrèmol menor|
+ |LightE|Terratrèmol lleuger|
+ |ModerateE|Terratrèmol moderat|
+ |StrongE|Terratrèmol fort|
+ |MajorE|Terratrèmol important|
+ |GreatE|Gran terratrèmol|
+ |RegionalE|Regional|
+ |Largest|Més gran|
+ 
+#sun/moon
+ |Azimuth|Azimut|
+ |Moon Phase / Sun-Moon  Rise-Set Information|Fase de Lluna, Pujada i posada de la Lluna|
+ |Moon Rise/Set Information|Pujada i Conjunt de Lluna|
+ |Sun Rise/Set Information|Pujada i posada del sol|
+ |Current Moon cycle is|El cicle actual de la Lluna és de|
+ |day before|dia abans|
+ |Moonphase|Fase de Lluna|
+ |Moonrise|Pujada Lluna|
+ |Moonset|Conjunt Lluna|
+ |SunRise/Set|Pujada i posada del sol| 
+ |Sunrise|Pujada del Sol|
+ |Sun rose at|El sol va pujar| 
+ |Sun will set|Sol es posarà| 
+ |Sunset|Sol posat|
+ |Sun set|Sol posat|
+ |Daylight|Llum del dia|
+ |Darkness|Foscor|
+ |Next Full Moon|Lluna plena|
+ |Next New Moon|Lluna nova|
+ |days old| dies |
+ |Till Sunrise|til sortida del Sol|
+ |Till Sunset|Till Sunset|
+ |Of Daylight|De llum del dia|
+ |Luminance|Lluminància|
+ |Elevation|Elevació|
+ |Estimated|Estimat|
+ |New Moon|Lluna nova|
+ |Waxing Crescent|Creixent|
+ |First Quarter|Primer quart|
+ |Waxing Gibbous|Gibosa creixent|
+ |Full Moon|Lluna Vella|
+ |Waning Gibbous|Lluna minvant|
+ |Third Quarter|Tercer trimestre| 
+ |Waning Crescent|Minvant|
+ |Moon|Lluna|
+ |Sun|Sol|
+ 
+#UV/solar
+ |Solar Radiation|Radiació Solar|
+ |Current UVINDEX Advisory|Assessorament actual d'ÍNDEX UV|
+ |CURRENT UVINDEX|ÍNDEX UV actual| 
+ |Lux Brightness|Brillantor|
+ |Excellent and Sustainable|Excel·lent i Sostenible|
+ |Good and Sustainable|Bé i Sostenible|
+ |Poor |Pobre |
+ |Solar Energy Replenishment|Reconstrucció d'energia solar|
+ |Good to Excellent|Bo a Excel·lent|
+ |Moderate to Good|Moderada a Bona|
+ |Low to Moderate|De baix a moderat|
+ |Low |Baix |
+ |None |Cap |
+ |Very high risk of harm from unprotected sun exposure. Take extra precautions.|Risc molt elevat de danys per una exposició solar no protegida. Tingueu precaucions addicionals.|
+ |High risk of harm from unprotected sun exposure.|Alt risc de danys per una exposició solar no protegida.|
+ |Moderate risk of harm from unprotected sun exposure.|Risc moderat de danys per una exposició solar no protegida.|
+ |Low danger from the sun&apos;s UV rays for the average person|Perill mitjà dels raigs UV del sol|
+ |Ultraviolet|Ultraviolat|
+ |Brightness|Brillantor|
+ |Lux|Lux|
+ |Index|Índex|
+ |Lux measurement|Lux. mesurament|
+ |Measures the approximate human eye response to light under a variety of lighting conditions.|Mesura la resposta aproximada dels ulls humans a la llum en diverses condicions d'il·luminació.|
+ |The total amount of all the light measured is known as the "luminous flux".|La quantitat total de tota la llum mesurada es coneix com a "flux lluminós".|
+
+#metar
+ |Airport-code|Codi aeroport|
+ |Current Conditions|Condicions actuals|
+ |Heavy |Pesat |
+ |Light |Llum |
+ |Location|Ubicació|
+ |Visibility|Visibilitat|
+ |Metar Aviation Weather Data|Dades meteorològiques de l'aviació METAR|
+ 
+# menu
+ |Menu|Menú|
+ |Home|Inici|
+ |Settings|Configuració|
+ |FIRST SETUP (protected)|CONFIGURACIÓ (protegida)|
+ |USER PREFERENCES|PREFERÈNCIES DEL VISITANT|
+ |Dark Theme|Tema fosc|
+ |Light Theme|Tema lleuger|
+ |Station Theme|Tema d’estació|
+ |Imperial|Imperial|
+ |Metric|Mètrica|menu
+ |UK (MPH)|UK (MPH)|
+ |Scandinavia|Escandinàvia (M/S)|
+ |Select language|SELECCIONAR IDIOMA|
+ |EXTRAS|EXTRAS|
+ |Web Cam|Càmera web|
+ |Contact Info|Dades de contacte|
+ |SUPPORT|SUPORT|
+ |Maintained by|Mantenit per|
+ 
+# bio
+ |Contact information|Informació de contacte|
+ |Mail|Correu electrònic|
+ |Twitter|Twitter|
+ |Website|Lloc web|
+
+# graphs
+ |High|Alt|
+ |Low|Baix|
+ |for this day|per aquest dia|
+ |for this month|per aquest mes|
+ |for this year|per aquest any|
+ |Data from our weatherstation|Dades de la nostra estació meteorològica|
+
+#conditions 
+ |Conditions|Condicions|
+ |drizzle|degoteig|
+ |rain|pluja|
+ |freezing|congelació|
+ |snow|neu|
+ |showers|dutxes|
+ |squall|escamot|
+ |haze|bruma|
+ |fog|boira|
+ |mist|boira|
+ |ice_pellets|pellets de gel|
+ |ice_crystals|cristalls de gel|
+ |hail|calamarsa|
+ |thunderstorm|tempesta de tronada|
+ |lightning|llamps|
+ |storm|tempesta|
+ |dust|pols|
+ |sand|sorra|
+ |tornado|tornado|
+ |water_spout|brollador d’aigua|
+ |smoke|fum|
+ |vulcanic_ash|cendra volcànica|
+ |blowing|bufar|
+ |widespread|generalitzat|
+ |heavy|pesat|
+ |light|llum|
+ |moderate|moderat|
+ |steady|constant|
+ |or|o|
+ |unknown|desconegut|
+# conditions clouds
+ |Clear|Sense núvols|
+ |Partly Cloudy|Parcialment ennuvolat|
+ |Mostly Scattered Clouds|Majoritàriament núvols dispersos|
+ |Mostly Cloudy|Força ennuvolat|
+ |Overcast|Encapotat|
+
+# #####
+ |from|des de|
+ |Never base important decisions that could result in harm to people or property on this weather information.|No baseu mai decisions importants que puguin causar danys a les persones o a la propietat en aquesta informació meteorològica.|
+ 
+ 
+
+
+
+ 
+ 
+

@@ -1,0 +1,22 @@
+# blocks 
+ |Rainfalltoday|Rainfal Today|
+ |LiveWebCam|Live Webcam| 
+#w-names
+ |precipitation|Precipitation|
+#airquality                                              
+ |GoodAQ|Good Air Quality|
+ |ModerateAQ|Moderate Air Quality|
+ |UnhealthyFSAQ|Unhealthy for some|
+ |UnhealthyAQ|Unhealthy  Air Quality| #todo
+ |VeryUnhealthyAQ|Very Unhealthy| 
+ |HazordousAQ|Hazardous  Air Quality| 
+#earthquake
+ |MinorE|Minor Earthquake|
+ |LightE|Light Earthquake|
+ |ModerateE|Moderate Earthquake|
+ |StrongE|Strong Earthquake|
+ |MajorE|Major Earthquake|
+ |GreatE|Great Earthquake|
+ |RegionalE|Regional|
+
+

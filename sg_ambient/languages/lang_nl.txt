@@ -1,0 +1,512 @@
+# units 
+ |hPa|hPa|
+ |inHg|inHg|
+ |mm|mm|
+ |mt|m|
+ |feet|Voet|
+ |cm|cm|
+ |km|km|
+ |km/h|km/u|
+ |kph|km/u|
+ |KM/H|KM/U|
+ |KMs|KMs| 
+ |mile|mijl|
+ |Miles|Miles|
+ |minutes|minuten|
+ |Hours|Uren|
+ |Hrs|u. | 
+ |km/uur|km/u|
+ |Bft|Bft|
+ |Kts|Kts|
+ |KTS|KTS|
+ |MPH|MPH|
+ |M/S|M/S|
+ |hrs |u. |
+ |mins |m. |
+ |min |m. | 
+ |secs |s. |
+ |C|C|
+ |F|F|
+ |Celsius|Celsius|
+ |Fahrenheit|Fahrenheit|
+ |/h|/uur|
+ |/m|/min.|
+# months
+ |Apr |Apr |
+ |Aug |Aug |
+ |Dec |Dec |
+ |Feb |Feb |
+ |Jan |Jan |
+ |Jul |Jul |
+ |Jun |Jun |
+ |Mar |Mrt |
+ |May |Mei |
+ |Nov |Nov |
+ |Oct |Oct |
+ |Sep |Sep |
+ |April|April|
+ |August|Augustus|
+ |December|December|
+ |February|Februari|
+ |January|Januari|
+ |July|Juli|
+ |June|Juni|
+ |March|Maart|
+ |May|Mei|
+ |November|November|
+ |October|October|
+ |September|September|
+
+# days
+ |Fri |Vrij|
+ |Mon |Mon |
+ |Sat |Zat |
+ |Sun |Zon |
+ |Thur |Don |
+ |Thu |Don |
+ |Tue |Din |
+ |Wed |Woe |
+
+ |Monday|Maandag|
+ |Tuesday|Dinsdag|
+ |Wednesday|Woensdag|
+ |Thursday|Donderdag|
+ |Friday|Vrijdag|
+ |Saturday|Zaterdag|
+ |Sunday|Zondag|
+
+#compass
+ |ENE|ONO|
+ |ESE|OZO|
+ |East|Oosten |
+ |E|O |
+ |NE|NO|
+ |NNE|NNO|
+ |NW|NW|
+ |NNW|NNW|
+ |North|Noord|
+ |N|N |
+ |SE|ZO|
+ |SSE|ZZO|
+ |SSW|ZZW|
+ |SW|ZW|
+ |South|Zuid|
+ |S|Z |
+ |WNW|WNW|
+ |WSW|WZW|
+ |West|West|
+ |W|W |
+
+#common
+ |Updated|Bijgewerkt|
+ |Last Updated|Laatste gegevens|
+ |Offline|Offline|
+ |Online|Online|
+ |Information|Informatie|
+ |Close|Sluiten|
+ |Distance|Afstand|
+ |Time|Tijd|
+ |Description|Omschrijving|
+ |here|hier|
+ |Link|Link|
+ |Day|Dag|
+ |Today|Vandaag|
+ |Tonight|Vannacht|
+ |Yesterday|Gisteren|
+ |Tomorrow|Morgen|
+ |Daily|Dagelijks|
+ |Hourly|per uur|
+ |Last Hour|Laatste uur|
+ |History|Historie|
+ |Max|Max|
+ |Min|Min|
+ |Powered by|Gegevens van| 
+ |Night|Nacht|
+ |Forecast for|Verwachting voor|
+ |by|door|
+ |Current|Actuele|
+ |All time|Altijd|
+ |Average|Gemiddelde|
+ |Avg |Gem|
+ |Falling|Dalend|
+ |Rising| Stijgend|
+ |Steady| Stabiel|
+ |Force|Kracht|
+ |forecast|verwachting|
+ |No valid sensors found|Geen meetwaardes beschikbaar|
+ 
+# notifications
+ |Notification|Bericht|
+ |Notifications|Waarschuwingen|
+ |UV-Index Caution|UV-Index waarschuwing|
+ |Reduce Sun Exposure|Blijf uit de zon|
+ |Heat Exhaustion|Oververhitting|
+ |Heat Index Caution|Hitte waarschuwing|
+ |Wind Gusts Reaching Gale Force|Windvlagen bereiken "orkaan"kracht|
+ |Wind Gusts Becoming Strong Caution Required|Windvlagen stormkracht. Voorzichtigheid vereist|
+ |Lightning Strike Alert Detected|Lightning Strike Alert Detected|
+ |seconds ago|secondes geleden|
+
+# blocks 
+ |Forecast|Verwachting|
+ |Earthquakes|Aardbevingen|
+ |Earthquake|Aardbevings data|
+ |Currentsky|Huidige Situatie|
+ |Airport|Vliegveld|
+ |SunPosition|Zon positie|
+ |Moon info|Maan informatie|
+ |Aurora|Aurora|
+ |Meteors|Meteoren|
+ |Rainfalltoday|Neerslag Vandaag|
+ |Radar|Radar|
+ |LiveWebCam|WebCam|
+ |Enlarge|Vergroot|
+ |Movie|Film|
+ |Solar - UV-Index - Lux|Solar - UV-Index - Lux|
+ |Indoor Temperature|Binnen temperatuur|
+ |Our PurpleAir sensor|Onze PurpleAir sensor|
+ |Our Luftdaten AQ sensor|Onze Luftdaten AQ sensor|
+ |Official AQ sensor station|Officiële lucht kwaliteit meting|
+ |Moonphase information|Maanfase|
+ |Our WXSIM forecast|Onze WXSIM verwachting|
+ |Environment Canada forecast|Environment Canada forecast|
+ |WeatherUnderground forecast|WeatherUnderground verwachting|
+ |Details|Details|
+ |Texts|Teksten|
+ |Official weather alarms|Officiële Weer Waarschuwing|
+ |Max-Min Temperature|Max-Min Temperatuur|
+ |Annual Rainfall|Jaarlijkse regen|
+ |Last Earthquake|Laatste aardbeving|
+ |Station weather history|Historie van het station|
+ |Wind - Gust|Wind - Vlaag| 
+ |UV Guide|UV gids|                                       
+ 
+# advisory
+ |Lightning Strike Nearby|Bliksem inslag dichtbij|
+ |Possible Storm Approaching|Storm komt dichterbij|
+ |Caution|Let op!|
+ |Below Freezing|Onder het vriespunt|
+ |Firerisk|Brandgevaar|
+ |Possible|Mogelijk|
+ |Viewing Possible|Mogelijk te bekijken|
+ |Radio Aurora Possible|Radio storing mogelijk|
+ |Expect|Verwacht|
+ |This Week|Deze week|
+ |This hour|Dit uur|
+ |(Severe) thunderstorms possible|(Zware) onweersbuien mogelijk|
+ |Flooding Possible|Water-overlast mogelijk|
+ |Have a nice day|Prettige dag| 
+#lightning
+ |Lightning|Bliksem|
+ |Nearby Lightning|Onweer dichtbij|
+ |Nearby|Dichtbij|
+ |Total strikes|Inslagen totaal|
+ |Latest strike at|Laatste inslag om|
+ |Last 3 hr|Laatste 3 uur|
+ |Direction|Richting|
+
+#bft_names
+ |Calm|Kalm|
+ |Light air|Zeer zwak |
+ |Light breeze|Zwak|
+ |Gentle breeze|Vrij matig|
+ |Moderate breeze|Matig |
+ |Fresh breeze|Vrij krachtig |
+ |Strong breeze|Krachtig |
+ |Near gale|Hard |
+ |Gale force|Stormachtig |
+ |Strong gale|Sterke storm |
+ |Storm|Zware storm |
+ |Violent storm|Orkaanachtig |
+ |Hurricane|Orkaan |
+
+#w-names
+ |Barometer|Barometer|
+ |Pressure|Luchtdruk|
+ |Temperature|Temperatuur|
+ |Gust|Vlaag|
+ |Precipitation|Neerslag|
+ |precipitation|Neerslag|
+ |Windspeed|Wind Snelheid|
+ |Winddirection|Wind Richting|
+ |UV index|UV index|
+ |UVI|UV|
+ |UV|UV|
+ |Humidity|Vochtigheid|
+ |Solar|Solar|
+ |Heatindex|Warmte Index|
+ |Wet Bulb|Natte bol|                 
+ |Wind|Wind|
+ |Wind Run|Windafst.|
+ |Windchill|Windchill| 
+ |Dewpoint|Dauwpunt|
+ |Feels|Voelt|
+ |Feels like|Voelt als|
+ |Indoor|Binnen|
+ |Rate|Snelh. | 
+ |Rainfall|Neerslag|    
+ 
+#meteors
+ |Any nearby ambientlight, Moonlight can make it difficult viewing.|Elke omgevingslicht, maanlicht maakt het bekijken moeilijker.|
+ |Meteors are best viewed during the night hours, though meteors enter the atmosphere at any time of the day.|Meteoren kun je het best bekijken tijdens de nachturen, hoewel meteoren de atmosfeer op elk moment van de dag binnenkomen.|
+ |Meteor showers are best viewed away from the city lights.|Ze worden het beste gezien uit het zicht van stadsverlichting.|
+ |They are just harder to see in the daylight apart from dawn and dusk.|Ze zijn gewoon moeilijker om in het daglicht te zien, behalve bij dageraad en schemering.|
+
+ |Active Sky Events|Te zien aan de hemel|
+ |No Active Sky Events|Geen bijzonderheden|
+ |Current Events|Huidige gebeurtenissen|
+ |Next Events|Volgende gebeurtenissen|
+ |Annual Meteor Showers|Jaarlijkse meteoren regen|
+ |Meteor Shower|Meteoren regen|
+ |Meteor Showers|Meteoren regen|
+ 
+ |Guide|Uitleg|
+ |Peak|piek |
+ |Visible|Zichtbaar|
+ |Eclipse|Verduistering|
+ |Lunar|Maan|
+ |Total|Totale|
+ |Annular|Ringvormige|
+ |Partial|Gedeeltelijke|
+ 
+ |Wikipedia|Wikipedia|
+ |Data Provided by|Gegevens afkomstig van|
+
+#aurora
+ |Visual Aurora Borealis/Northern Lights and VHF Radio Aurora Indicators|Zichtbaar Aurora Borealis/Noorderlicht en VHF Radio Aurora-indicatoren|
+ |Geomagnetic Storm|Geomagnetische Storm|
+ |KP-PLANETARY INDEX|KP-PLANETARY INDEX|
+ |Radio Aurora Indicators|Radio Aurora Indicatoren|
+ |KP-INDEX|KP-INDEX|
+ |A-INDEX|A-INDEX|
+ |Geomagnetic Severe Storm|Zeer Zware Geomagnetische Storm|
+ |Geomagnetic Major Storm|Zware Geomagnetische Storm|
+ |Minor|Kleinere|
+ |Weak|Zwakke|
+ |Quiet No|Kalm, Geen|
+ |Excellent Aurora Viewing Possible|Excellent <br>Aurora Viewing Possible|
+ |Mid to High Latitude Aurora Viewing Possible|Mid to High Latitude <br>Aurora Viewing Possible|
+ |High Latitude Aurora Viewing Possible|High Latitude <br>Aurora Viewing Possible|
+ |Weak High Latitude Aurora Viewing Possible|Weak High Latitude Aurora <br />Viewing Possible|
+ |No Aurora|Geen Aurora|
+ |NOT ACTIVE|NIET ACTIEF|
+ |RADIO AURORA ACTIVE|RADIO AURORA ACTIEF|    
+ |Severe Storm|Zeer Zware Storm|
+ |Major Storm|Zware Storm|
+ |Strong Radio Aurora|Strong Radio Aurora|
+ |Mid-High Latitude Radio Aurora|Mid-High Latitude Radio Aurora|
+ |Radio Aurora|Radio Aurora|
+ |High Latitude Radio Aurora|High Latitude Radio Aurora|
+ |High Latitude Weak Radio Aurora|High Latitude Weak Radio Aurora|
+ |No Radio Aurora|Geen Radio Aurora|
+
+#airquality                                              
+ |Air Quality|Luchtkwaliteit|
+ |Air quality sensor|Lucktkwaliteit sensor|
+ |Air Quality data from our own sensor|Luchtkwaliteit gemeten door onze sensor|
+ |Station ID|Station ID|
+ |Information on Air Quality|Informatie over Luchtkwaliteit (AQI)|
+ |GoodAQ|Goede lucht kwaliteit |
+ |ModerateAQ|Aanvaardbare lucht kwaliteit|
+ |UnhealthyFSAQ|Ongezond voor enkelen|
+ |UnhealthyAQ|Ongezond|
+ |VeryUnhealthyAQ|Zeer ongezond|
+ |HazordousAQ|Gevaarlijk|
+ |Precautions Required|Neem voorzorgsmaatregelen !|
+ |Critical Conditions|Kritiek !|
+ |Life Threatening|Levensbedreigend !|
+ |Current cloudbase|Huidige wolken-hoogte|
+ |Information on Cloudbase|Informatie over wolkenhoogte|
+ |Based on a common formula using the temperature & dewpoint, as recorded realtime from this weather station, an estimated height of the cloudbase is calculated.|Op basis van een veel gebruikte formule met behulp van de temperatuur- en dauwpunt van dit weerstation, wordt een geschatte hoogte van de wolkenbasis berekend.|
+ |It is not a accurate tool it is a relative indicator.|Het is geen nauwkeurig hulpmiddel, het geeft een redelijke benadering.|
+
+#earthquake
+ |Earthquake information courtesy of|De volgende informatie is verzameld door|
+ |Magnitude|Magnitude|
+ |Depth|Diepte|
+ |Coordinates|Coordinaten|
+ |Table is sorted by|Tabel is gesorteerd op|
+ |Click to sort the table on|Klik om te sorteren op|
+ |or on|of op|
+ |MinorE|Kleine beving|
+ |LightE|Lichte beving|
+ |ModerateE|Matige beving|
+ |StrongE|Sterke beving|                         
+ |MajorE|Grote beving|
+ |GreatE|Zeer grote beving|
+ |RegionalE|Regionale|
+ |Largest|Grootste|              
+ 
+#sun/moon
+ |Azimuth|Azimuth|
+ |Moon Phase / Sun-Moon  Rise-Set Information|Maan-fase / zonsopkomst en zonsondergang|
+ |Moon Rise/Set Information|Maan opkomst/ondergang|
+ |Sun Rise/Set Information|Zon opkomst/ondergang|
+ |Current Moon cycle is|Huidige maancyclus is|
+ |day before|vorige dag|
+ |Moonphase|Maanfase|
+ |Moonrise|Maanopkomst|
+ |Moonset|Maanondergang|
+ |SunRise/Set|Zon op/onder|
+ |Sunrise|Zonsopkomst|
+ |Sun rose at|De zon kwam op |
+ |Sun will set|Zon gaat onder|
+ |Sunset|Zonsondergang|
+ |Sun set|Zonsondergang|
+ |Daylight|Daglicht|
+ |Darkness|Donker|
+ |Next Full Moon|Volle maan|
+ |Next New Moon|Nieuwe maan|
+ |days old|dagen oud|
+ |Till Sunrise|<small>Tot&nbsp;zonsopkomst</small>|
+ |Till Sunset|<small>Tot&nbsp;zonsondergang</small>|
+ |Of Daylight|daglicht|
+ |Luminance|Verlicht|
+ |Elevation|Elevatie hoek|
+ |Estimated|Geschat:|
+ |New Moon|Nieuwe maan|
+ |Waxing Crescent|Wassende maan|
+ |First Quarter|Eerste kwartier|
+ |Waxing Gibbous|Wassende maan|
+ |Full Moon|Volle maan|
+ |Waning Gibbous|Afnemende maan|
+ |Third Quarter|Laatste kwartier|
+ |Waning Crescent|Afnemende maan|
+ |Moon|Maan|
+ |Sun|Zon|
+ 
+#UV/solar
+ |Solar Radiation|Zonnestraling|
+ |Current UVINDEX Advisory|Advies bij huidige UV-index|
+ |CURRENT UVINDEX|Huidige UV-index|
+ |Lux Brightness|Lux Helderheid|
+ |Excellent and Sustainable|Uitstekend en duurzaam|
+ |Good and Sustainable|Goed en duurzaam|
+ |Poor |Matig |
+ |Solar Energy Replenishment|Zonne-energievoorziening|
+ |Good to Excellent|Goed tot excellent|
+ |Moderate to Good|Matig tot goed|
+ |Low to Moderate|Laag tot matig|
+ |Low |Laag |
+ |None |Geen |
+ |Very high risk of harm from unprotected sun exposure. Take extra precautions.|Zeer hoog risico op schade bij onbeschermde blootstelling aan de zon. Neem extra voorzorgsmaatregelen.|
+ |High risk of harm from unprotected sun exposure.|Hoog risico op schade door onbeschermde blootstelling aan de zon.|
+ |Moderate risk of harm from unprotected sun exposure.|Matig risico op schade door onbeschermde blootstelling aan de zon.|
+ |Low danger from the sun&apos;s UV rays for the average person|Laag risico van de UV-stralen van de zon voor de gemiddelde persoon|
+ |Ultraviolet|Ultraviolet|
+ |Brightness|Herlderheid|
+ |Lux|Lux|
+ |Index|Index|
+ |Lux measurement|Lux meting|
+ |Measures the approximate human eye response to light under a variety of lighting conditions.|Meet de geschatte reactie van het menselijk oog op licht onder verschillende lichtomstandigheden.|
+ |The total amount of all the light measured is known as the "luminous flux".|De totale hoeveelheid van al het gemeten licht staat bekend als de "lichtstroom".|
+
+#metar
+ |Airport-code|Vliegveld code|
+ |Current Conditions|Huidig weer|
+ |Heavy |Veel | 
+ |Light |Lichte |
+ |Location|Locatie |
+ |Visibility|Zicht|
+ |Metar Aviation Weather Data|METAR luchtvaart weer gegevens |
+ 
+# menu
+ |Menu|Menu|
+ |Home|Start|
+ |Settings|Instellingen|    
+ |FIRST SETUP (protected)|INSTELLINGEN (beveiligd)|
+ |USER PREFERENCES|GEBRUIKERS AANPASSINGEN|
+ |Dark Theme|Donkere achtergrond|
+ |Light Theme|Lichte achtergrond|
+ |Station Theme|Achtergrond kleur van station|
+ |Imperial|Imperial|
+ |Metric|Metric (C)|  menu
+ |UK (MPH)|UK (MPH - Metric) |
+ |Scandinavia|Scandinavië(M/S)|  
+ |Select language|SELECTEER EEN TAAL|                     
+ |EXTRAS|EXTRA'S|
+ |Web Cam|Web Cam|
+ |Contact Info|Kontact Info|
+ |SUPPORT|ONDERSTEUNING|
+ |Maintained by|Onderhoud door|
+ 
+# bio
+ |Contact information|Contactgegevens|
+ |Mail|Mail|
+ |Twitter|Twitter|
+ |Website|Website|
+
+# graphs
+ |High|Hoog| graph
+ |Low|Laag| graph
+ |for this day|voor vandaag|
+ |for this month|voor deze maand|
+ |for this year|voor dit jaar|
+ |Data from our weatherstation|Gegevens verzameld door ons weerstation|
+
+#conditions 
+ |Conditions|Condities|
+ |drizzle|Motregen|
+ |rain|Regen|
+ |freezing|IJskoude|
+ |snow|Sneeuw|
+ |showers|buien|
+ |squall|Zware windstoten|
+ |haze|Nevel|
+ |fog|Mist|
+ |mist|Mist|
+ |ice_pellets|IJsregen|
+ |ice_crystals|IJsregen|
+ |hail|Hagel|
+ |thunderstorm|Onweer|
+ |lightning|Bliksem|
+ |storm|Storm|
+ |dust|Stof|
+ |sand|Zand|
+ |tornado|Tornado|
+ |water_spout|Waterhoos|
+ |smoke|Rook|
+ |vulcanic_ash|Vulkanische as|
+ |blowing|Opwaaiend|
+ |widespread|Verspreid|
+ |heavy|Hevige|
+ |light|Lichte|
+ |moderate|Matig|
+ |steady| |
+ |or|of|
+ |unknown|Onbekend|
+# conditions clouds
+ |Clear|Helder|
+ |Partly Cloudy|Wat bewolking|
+ |Mostly Scattered Clouds|Veel verspreide wolken|
+ |Mostly Cloudy|Grotendeels bewolkt|
+ |Overcast|Geheel bewolkt|
+
+# #####
+ |from|van|                                                         
+ |Never base important decisions that could result in harm to people or property on this weather information.|Baseer nooit belangrijke beslissingen die kunnen resulteren in schade aan mensen of eigendommen op deze weersinformatie.|
+
+# added release 1912
+ |days|dagen|
+ |Map|Kaart|
+ |Full page|Niewe pagina|
+ |Extra block|extra|
+ |stored at WU|en opgeslagen bij WeatherUnderground. |
+ |for the last|voor de laatste|
+
+#added release 2004
+ |Extra sensors|Extra sensors|
+ |Soil info|Bodem info|
+ |Our station AQ sensor|Luchtmeting van dit station|
+ |Garden|Tuin|
+ |Moisture|Grond-vocht|
+ |Irrigation needed|Irrigatie vereist|
+ |extra_tmp1|temperatuur|
+ |Sunny|Zonnig|
+ |Mostly Clear|Grotendeels helder|
+ |Mostly Sunny|Grotendeels zonnig|
+ |Isolated Showers|Verspreide buien|
+ |One hour forecast|1 uur verwachting|
+ |Station|Station|
+ |Outside|Buiten|
+ |24h Avg|24u Avg|

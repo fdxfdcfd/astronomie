@@ -1,0 +1,33 @@
+Script characteristics on last page load:
+Last update: Fri 07-31-2020 01:54 PDT
+nws-alerts.php - V1.43 - 14-May-2019
+4 unique Zone entries found. Zones='CTZ006,CTC009,CAZ529,CAC087'
+cache age 202734 seconds - fetch needed
+Cron job not used
+XML source: https://alerts.weather.gov/cap/wwaatmget.php?x=CTZ006&y=1
+HTTP stats:  RC=200 dest=42.119.184.148 port=443 (from sce=112.213.89.136)
+      Times: dns=0.152 conn=0.153 pxfer=0.171 get=0.801 total=0.972 secs
+XML source: https://alerts.weather.gov/cap/wwaatmget.php?x=CTC009&y=1
+HTTP stats:  RC=200 dest=42.119.184.148 port=443 (from sce=112.213.89.136)
+      Times: dns=0.252 conn=0.253 pxfer=0.269 get=0.637 total=0.906 secs
+
+1:54:32
+Error: Resolving timed out after 2000 milliseconds
+Source: https://alerts.weather.gov/cap/wwaatmget.php?x=CAZ529&y=1
+non XML source: https://alerts.weather.gov/cap/wwaatmget.php?x=CAZ529&y=1
+HTTP stats:  RC=0 dest= port=0 (from sce=)
+      Times: dns=0.000 conn=0.000 pxfer=0.000 get=5.279 total=5.279 secs
+header type=''
+First attempt in getting preliminary URL failed
+XML source: https://alerts.weather.gov/cap/wwaatmget.php?x=CAZ529&y=1
+HTTP stats:  RC=200 dest=42.119.184.148 port=443 (from sce=112.213.89.136)
+      Times: dns=0.101 conn=0.102 pxfer=0.118 get=0.767 total=0.884 secs
+Second attempt successful
+
+XML source: https://alerts.weather.gov/cap/wwaatmget.php?x=CAC087&y=1
+HTTP stats:  RC=200 dest=42.119.184.148 port=443 (from sce=112.213.89.136)
+      Times: dns=0.102 conn=0.104 pxfer=0.127 get=0.659 total=0.786 secs
+Cache file updated: Fri 07-31-2020 1:54 am
+Alert box data file updated
+Icon data file updated
+Total process time: 9.8375 seconds

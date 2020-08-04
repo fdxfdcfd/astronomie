@@ -1,0 +1,500 @@
+# units 
+ |hPa|hPa|
+ |inHg|inHg|
+ |mm|mm|
+ |mt|mt|
+ |feet|feet|
+ |cm|cm|
+ |km|km|
+ |km/h|km/h|
+ |kph|kph|
+ |KM/H|KM/H|
+ |KMs|KMs|
+ |mile|mile|
+ |Miles|Miles|
+ |minutes|minutes|
+ |Hours|Hours|
+ |Hrs|Hrs|
+ |km/uur|km/uur|
+ |Bft|Bft|
+ |Kts|Kts|
+ |KTS|KTS|
+ |MPH|MPH|
+ |M/S|M/S|
+ |hrs |hrs |
+ |mins |mins |
+ |min |min |
+ |secs |secs |
+ |C|C|
+ |F|F|
+ |Celsius|Celsius|
+ |Fahrenheit|Fahrenheit|
+ |/h|/h|
+ |/m|/m|
+# months
+ |Apr |Apr |
+ |Aug |Aug |
+ |Dec |Dec |
+ |Feb |Feb |
+ |Jan |Jan |
+ |Jul |Jul |
+ |Jun |Jun |
+ |Mar |Mar |
+ |May |May |
+ |Nov |Nov |
+ |Oct |Oct |
+ |Sep |Sep |
+ |April|April|
+ |August|August|
+ |December|December|
+ |February|February|
+ |January|January|
+ |July|July|
+ |June|June|
+ |March|March|
+ |May|May|
+ |November|November|
+ |October|October|
+ |September|September|
+
+# days
+ |Fri |Fri |
+ |Mon |Mon |
+ |Sat |Sat |
+ |Sun |Sun |
+ |Thur |Thur |
+ |Thu |Thu |
+ |Tue |Tue |
+ |Wed |Wed |
+
+ |Monday|Monday|
+ |Tuesday|Tuesday|
+ |Wednesday|Wednesday|
+ |Thursday|Thursday|
+ |Friday|Friday|
+ |Saturday|Saturday|
+ |Sunday|Sunday|
+
+#compass
+ |ENE|ENE|
+ |ESE|ESE|
+ |East|East|
+ |E|E|
+ |NE|NE|
+ |NNE|NNE|
+ |NW|NW|
+ |NNW|NNW|
+ |North|North|
+ |N|N|
+ |SE|SE|
+ |SSE|SSE|
+ |SSW|SSW|
+ |SW|SW|
+ |South|South|
+ |S|S|
+ |WNW|WNW|
+ |WSW|WSW|
+ |West|West|
+ |W|W|
+
+#common
+ |Updated|Updated|
+ |Last Updated|Last Updated|
+ |Offline|Offline|
+ |Online|Online|
+ |Information|Information|
+ |Close|Close|
+ |Distance|Distance|
+ |Time|Time|
+ |Description|Description|
+ |here|here|
+ |Link|Link|
+ |Day|Day|
+ |Today|Today|
+ |Tonight|Tonight|
+ |Yesterday|Yesterday|
+ |Tomorrow|Tomorrow|
+ |Daily|Daily|
+ |Hourly|Hourly|
+ |Last Hour|Last Hour|
+ |History|History|
+ |Max|Max|
+ |Min|Min|
+ |Powered by|Powered by|
+ |Night|Night|
+ |Forecast for|Forecast for|
+ |by|by|
+ |Current|Current|
+ |All time|All time|
+ |Average|Average|
+ |Avg |Avg |
+ |Falling|Falling|
+ |Rising|Rising|
+ |Steady|Steady|
+ |Force|Force|
+ |forecast|forecast|
+ |No valid sensors found|No valid sensors found|
+ 
+# notifications
+ |Notification|Notification|
+ |Notifications|Notifications|
+ |UV-Index Caution|UV-Index Caution|
+ |Reduce Sun Exposure|Reduce Sun Exposure|
+ |Heat Exhaustion|Heat Exhaustion|
+ |Heat Index Caution|Heat Index Caution|
+ |Wind Gusts Reaching Gale Force|Wind Gusts Reaching Gale Force|
+ |Wind Gusts Becoming Strong Caution Required|Wind Gusts Becoming Strong Caution Required|
+ |Lightning Strike Alert Detected|Lightning Strike Alert Detected|
+ |seconds ago|seconds ago|
+
+# blocks 
+ |Forecast|Forecast|
+ |Earthquakes|Earthquakes|
+ |Earthquake|Earthquake|
+ |Currentsky|Currentsky|
+ |Airport|Airport|
+ |SunPosition|SunPosition|
+ |Moon info|Moon info|
+ |Aurora|Aurora|
+ |Meteors|Meteors|
+ |Rainfalltoday|Rainfall today|
+ |Radar|Radar|
+ |LiveWebCam|Live WebCam|
+ |Enlarge|Enlarge|
+ |Movie|Movie|
+ |Solar - UV-Index - Lux|Solar - UV-Index - Lux|
+ |Indoor Temperature|Indoor Temperature|
+ |Our PurpleAir sensor|Our PurpleAir sensor|
+ |Our Luftdaten AQ sensor|Our Luftdaten AQ sensor|
+ |Official AQ sensor station|Official AQ sensor station|
+ |Moonphase information|Moonphase information|
+ |Our WXSIM forecast|Our WXSIM forecast|
+ |Environment Canada forecast|Environment Canada forecast|
+ |WeatherUnderground forecast|WeatherUnderground forecast|
+ |Details|Details|
+ |Texts|Texts|
+ |Official weather alarms|Official weather alarms|
+ |Max-Min Temperature|Max-Min Temperature|
+ |Annual Rainfall|Annual Rainfall|
+ |Last Earthquake|Last Earthquake|
+ |Station weather history|Station weather history|
+ |Wind - Gust|Wind - Gust|
+ |UV Guide|UV Guide| #double > UV Guide
+ 
+# advisory
+ |Lightning Strike Nearby|Lightning Strike Nearby|
+ |Possible Storm Approaching|Possible Storm Approaching|
+ |Caution|Caution|
+ |Below Freezing|Below Freezing|
+ |Firerisk|Firerisk|
+ |Possible|Possible|
+ |Viewing Possible|Viewing Possible|
+ |Radio Aurora Possible|Radio Aurora Possible|
+ |Expect|Expect|
+ |This Week|This Week|
+ |This hour|This hour|
+ |(Severe) thunderstorms possible|(Severe) thunderstorms possible|
+ |Flooding Possible|Flooding Possible|
+ |Have a nice day|Have a nice day|
+#lightning
+ |Lightning|Lightning|
+ |Nearby Lightning|Nearby Lightning|
+ |Nearby|Nearby|
+ |Total strikes|Total strikes|
+ |Latest strike at|Latest strike at|
+ |Last 3 hr|Last 3 hr|
+ |Direction|Direction|
+
+#bft_names
+ |Calm|Calm|
+ |Light air|Light air|
+ |Light breeze|Light breeze|
+ |Gentle breeze|Gentle breeze|
+ |Moderate breeze|Moderate breeze|
+ |Fresh breeze|Fresh breeze|
+ |Strong breeze|Strong breeze|
+ |Near gale|Near gale|
+ |Gale force|Gale force|
+ |Strong gale|Strong gale|
+ |Storm|Storm|
+ |Violent storm|Violent storm|
+ |Hurricane|Hurricane|
+
+#w-names
+ |Barometer|Barometer|
+ |Pressure|Pressure|
+ |Temperature|Temperature|
+ |Gust|Gust|
+ |Precipitation|Precipitation|
+ |precipitation|Precipitation|
+ |Windspeed|Windspeed|
+ |Winddirection|Winddirection|
+ |UV index|UV index|UV index
+ |UVI|UVI|
+ |UV|UV|
+ |Humidity|Humidity|
+ |Solar|Solar|
+ |Heatindex|Heatindex|
+ |Wet Bulb|Wet Bulb|
+ |Wind|Wind|
+ |Wind Run|Wind Run|
+ |Windchill|Windchill|
+ |Dewpoint|Dewpoint|
+ |Feels|Feels|
+ |Feels like|Feels like|
+ |Indoor|Indoor|
+ |Rate|Rate|
+ |Rainfall|Rainfall|
+ 
+#meteors
+ |Any nearby ambientlight, Moonlight can make it difficult viewing.|Any nearby ambientlight, Moonlight can make it difficult viewing.|
+ |Meteors are best viewed during the night hours, though meteors enter the atmosphere at any time of the day.|Meteors are best viewed during the night hours, though meteors enter the atmosphere at any time of the day.|
+ |Meteor showers are best viewed away from the city lights.|Meteor showers are best viewed away from the city lights.|
+ |They are just harder to see in the daylight apart from dawn and dusk.|They are just harder to see in the daylight apart from dawn and dusk.|
+
+ |Active Sky Events|Active Sky Events|
+ |No Active Sky Events|No Active Sky Events|
+ |Current Events|Current Events|
+ |Next Events|Next Events|
+ |Annual Meteor Showers|Annual Meteor Showers|
+ |Meteor Shower|Meteor Shower|
+ |Meteor Showers|Meteor Showers|
+ 
+ |Guide|Guide|
+ |Peak|Peak|
+ |Visible|Visible|
+ |Eclipse|Eclipse|
+ |Lunar|Lunar|
+ |Total|Total|
+ |Annular|Annular|
+ |Partial|Partial|
+ 
+ |Wikipedia|Wikipedia|
+ |Data Provided by|Data Provided by|
+
+#aurora
+ |Visual Aurora Borealis/Northern Lights and VHF Radio Aurora Indicators|Visual Aurora Borealis/Northern Lights and VHF Radio Aurora Indicators|
+ |Geomagnetic Storm|Geomagnetic Storm|
+ |KP-PLANETARY INDEX|KP-PLANETARY INDEX|
+ |Radio Aurora Indicators|Radio Aurora Indicators|
+ |KP-INDEX|KP-INDEX|
+ |A-INDEX|A-INDEX|
+ |Geomagnetic Severe Storm|Geomagnetic Severe Storm|
+ |Geomagnetic Major Storm|Geomagnetic Major Storm|
+ |Minor|Minor|
+ |Weak|Weak|
+ |Quiet No|Quiet No|
+ |Excellent Aurora Viewing Possible|Excellent Aurora Viewing Possible|
+ |Mid to High Latitude Aurora Viewing Possible|Mid to High Latitude Aurora Viewing Possible|
+ |High Latitude Aurora Viewing Possible|High Latitude Aurora Viewing Possible|
+ |Weak High Latitude Aurora Viewing Possible|Weak High Latitude Aurora Viewing Possible|
+ |No Aurora|No Aurora|
+ |NOT ACTIVE|NOT ACTIVE|
+ |RADIO AURORA ACTIVE|RADIO AURORA ACTIVE|
+ |Severe Storm|Severe Storm|
+ |Major Storm|Major Storm|
+ |Strong Radio Aurora|Strong Radio Aurora|
+ |Mid-High Latitude Radio Aurora|Mid-High Latitude Radio Aurora|
+ |Radio Aurora|Radio Aurora|
+ |High Latitude Radio Aurora|High Latitude Radio Aurora|
+ |High Latitude Weak Radio Aurora|High Latitude Weak Radio Aurora|
+ |No Radio Aurora|No Radio Aurora|
+
+#airquality                                              
+ |Air Quality|Air Quality|
+ |Air quality sensor|Air quality sensor|
+ |Air Quality data from our own sensor|Air Quality data from our own sensor|
+ |Station ID|Station ID|
+ |Information on Air Quality|Information on Air Quality|
+ |GoodAQ|Good Air Quality|
+ |ModerateAQ|Moderate Air Quality|
+ |UnhealthyFSAQ|Unhealthy for some|
+ |UnhealthyAQ|Unhealthy  Air Quality| #todo
+ |VeryUnhealthyAQ|Very Unhealthy| 
+ |HazordousAQ|Hazardous  Air Quality| 
+ |Precautions Required|Precautions Required|
+ |Critical Conditions|Critical Conditions|
+ |Life Threatening|Life Threatening|
+ |Current cloudbase|Current cloudbase|
+ |Information on Cloudbase|Information on Cloudbase|
+ |Based on a common formula using the temperature & dewpoint, as recorded realtime from this weather station, an estimated height of the cloudbase is calculated.|Based on a common formula using the temperature & dewpoint, as recorded realtime from this weather station, an estimated height of the cloudbase is calculated.|
+ |It is not a accurate tool it is a relative indicator.|It is not a accurate tool it is a relative indicator.|
+
+#earthquake
+ |Earthquake information courtesy of|Earthquake information courtesy of|
+ |Magnitude|Magnitude|
+ |Depth|Depth|
+ |Coordinates|Coordinates|
+ |Table is sorted by|Table is sorted by|
+ |Click to sort the table on|Click to sort the table on|
+ |or on|or on|
+ |MinorE|Minor Earthquake|
+ |LightE|Light Earthquake|
+ |ModerateE|Moderate Earthquake|
+ |StrongE|Strong Earthquake|
+ |MajorE|Major Earthquake|
+ |GreatE|Great Earthquake|
+ |RegionalE|Regional|
+ |Largest|Largest|
+ 
+#sun/moon
+ |Azimuth|Azimuth|
+ |Moon Phase / Sun-Moon  Rise-Set Information|Moon Phase / Sun-Moon  Rise-Set Information|
+ |Moon Rise/Set Information|Moon Rise/Set Information|
+ |Sun Rise/Set Information|Sun Rise/Set Information|
+ |Current Moon cycle is|Current Moon cycle is|
+ |day before|day before|
+ |Moonphase|Moonphase|
+ |Moonrise|Moonrise|
+ |Moonset|Moonset|
+ |SunRise/Set|SunRise/Set|
+ |Sunrise|Sunrise|
+ |Sun rose at|Sun rose at|
+ |Sun will set|Sun will set|
+ |Sunset|Sunset|
+ |Sun set|Sun set|
+ |Daylight|Daylight|
+ |Darkness|Darkness|
+ |Next Full Moon|Next Full Moon|
+ |Next New Moon|Next New Moon|
+ |days old|days old|
+ |Till Sunrise|Till Sunrise|
+ |Till Sunset|Till Sunset|
+ |Of Daylight|Of Daylight|
+ |Luminance|Luminance|
+ |Elevation|Elevation|
+ |Estimated|Estimated|
+ |New Moon|New Moon|
+ |Waxing Crescent|Waxing Crescent|
+ |First Quarter|First Quarter|
+ |Waxing Gibbous|Waxing Gibbous|
+ |Full Moon|Full Moon|
+ |Waning Gibbous|Waning Gibbous|
+ |Third Quarter|Third Quarter|
+ |Waning Crescent|Waning Crescent|
+ |Moon|Moon|
+ |Sun|Sun|
+ 
+#UV/solar
+ |Solar Radiation|Solar Radiation|
+ |Current UVINDEX Advisory|Current UVINDEX Advisory|
+ |CURRENT UVINDEX|CURRENT UVINDEX|
+ |Lux Brightness|Lux Brightness|
+ |Excellent and Sustainable|Excellent and Sustainable|
+ |Good and Sustainable|Good and Sustainable|
+ |Poor |Poor |
+ |Solar Energy Replenishment|Solar Energy Replenishment|
+ |Good to Excellent|Good to Excellent|
+ |Moderate to Good|Moderate to Good|
+ |Low to Moderate|Low to Moderate|
+ |Low |Low |
+ |None |None |
+ |Very high risk of harm from unprotected sun exposure. Take extra precautions.|Very high risk of harm from unprotected sun exposure. Take extra precautions.|
+ |High risk of harm from unprotected sun exposure.|High risk of harm from unprotected sun exposure.|
+ |Moderate risk of harm from unprotected sun exposure.|Moderate risk of harm from unprotected sun exposure.|
+ |Low danger from the sun&apos;s UV rays for the average person|Low danger from the sun&apos;s UV rays for the average person|
+ |Ultraviolet|Ultraviolet|
+ |Brightness|Brightness|
+ |Lux|Lux|
+ |Index|Index|
+ |Lux measurement|Lux measurement|
+ |Measures the approximate human eye response to light under a variety of lighting conditions.|Measures the approximate human eye response to light under a variety of lighting conditions.|
+ |The total amount of all the light measured is known as the "luminous flux".|The total amount of all the light measured is known as the "luminous flux".|
+
+#metar
+ |Airport-code|Airport-code|
+ |Current Conditions|Current Conditions|
+ |Heavy |Heavy |
+ |Light |Light |
+ |Location|Location|
+ |Visibility|Visibility|
+ |Metar Aviation Weather Data|Metar Aviation Weather Data|
+ 
+# menu
+ |Menu|Menu|
+ |Home|Home|
+ |Settings|Settings|
+ |FIRST SETUP (protected)|FIRST SETUP (protected)|
+ |USER PREFERENCES|USER PREFERENCES|
+ |Dark Theme|Dark Theme|
+ |Light Theme|Light Theme|
+ |Station Theme|Station Theme|
+ |Imperial|Imperial|
+ |Metric|Metric|menu
+ |UK (MPH)|UK (MPH)|
+ |Scandinavia|Scandinavia|
+ |Select language|Select language|
+ |EXTRAS|EXTRAS|
+ |Web Cam|Web Cam|
+ |Contact Info|Contact Info|
+ |SUPPORT|SUPPORT|
+ |Maintained by|Maintained by|
+ 
+# bio
+ |Contact information|Contact information|
+ |Mail|Mail|
+ |Twitter|Twitter|
+ |Website|Website|
+
+# graphs
+ |High|High|graph
+ |Low|Low|graph
+ |for this day|for this day|
+ |for this month|for this month|
+ |for this year|for this year|
+ |Data from our weatherstation|Data from our weatherstation|
+
+#conditions 
+ |Conditions|Conditions|
+ |drizzle|drizzle|
+ |rain|rain|
+ |freezing|freezing|
+ |snow|snow|
+ |showers|showers|
+ |squall|squall|
+ |haze|haze|
+ |fog|fog|
+ |mist|mist|
+ |ice_pellets|ice_pellets|
+ |ice_crystals|ice_crystals|
+ |hail|hail|
+ |thunderstorm|thunderstorm|
+ |lightning|lightning|
+ |storm|storm|
+ |dust|dust|
+ |sand|sand|
+ |tornado|tornado|
+ |water_spout|water_spout|
+ |smoke|smoke|
+ |vulcanic_ash|vulcanic_ash|
+ |blowing|blowing|
+ |widespread|widespread|
+ |heavy|heavy|
+ |light|light|
+ |moderate|moderate|
+ |steady|steady|
+ |or|or|
+ |unknown|unknown|
+# conditions clouds
+ |Clear|Clear|
+ |Partly Cloudy|Partly Cloudy|
+ |Mostly Scattered Clouds|Mostly Scattered Clouds|
+ |Mostly Cloudy|Mostly Cloudy|
+ |Overcast|Overcast|
+
+# #####
+ |from|from|
+ |Never base important decisions that could result in harm to people or property on this weather information.|Never base important decisions that could result in harm to people or property on this weather information.|
+
+# added release 1912
+ |days|days|
+ |Map|Map|
+ |Full page|Full page|
+ |Extra block|Extra block|
+ 
+
+
+
+ 
+ 
+
