@@ -56,7 +56,7 @@
 <!--End of Code chia thành 2 hình lớn width=100-->
         <div class="p-4">
             <div class="embed-responsive embed-responsive-16by9 p-4">
-                <iframe class="embed-responsive-item" src="https://embed.windy.com/embed2.html?lat=16.215&lon=106.743&detailLat=17.393&detailLon=106.479&width=650&height=650&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0">
+                <iframe class="embed-responsive-item" src="https://embed.windy.com/embed2.html?lat=16.215&lon=106.743&detailLat=17.393&detailLon=106.479&width=650&height=650&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=true&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0">
 				</iframe>
             </div>
         </div>
@@ -70,23 +70,23 @@
         <div class="d-flex flex-row mt-2 mb-2 flex-wrap">
             <div class="p-4 col-sm-6">
                 <P>Realtime BloomSky Image</P>
-                <img class="w-100 h-100" src="./img/sgi.jpg" type="video/mp4"alt="real time bllomsky">
+                <img class="w-100 h-100" src="./img/bloomsky.jpg" type="video/mp4"alt="real time bllomsky">
             </div>
             <div class="p-4 col-sm-6" >
                 <P>Realtime BloomSky Time-lapse</P>
-                <video class="w-100 h-100 border border-white" src="./video/sgv.mp4" type="video/mp4" alt="" controls></video>
+                <video class="w-100 h-100 border border-white" src="./video/bloomsky.mp4" type="video/mp4" alt="" controls></video>
             </div>
             <div class="p-4 col-sm-6">
                 <div class="small">Update every 10 minutes</div>
                 <div class="fb-share-button"
-                     data-href="./img/sgi.jpg"
+                     data-href="./img/bloomsky.jpg"
                      data-layout="button">
                 </div>
             </div>
             <div class="p-4 col-sm-6">
                 <div class="small">Update every 10 minutes</div>
                 <div class="fb-share-button"
-                     data-href="./video/sgv.mp4"
+                     data-href="./video/bloomsky.mp4"
                      data-layout="button">
                 </div>
             </div>
