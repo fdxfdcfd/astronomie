@@ -1,50 +1,89 @@
 <?php
-// Check if image file is a actual image or fake image
-if (isset($_POST["submit"])) {
-    $target_dir = "img/";
-    $target_file = $target_dir . basename($_FILES["fileToUploadHn"]["name"]);
-    $target_file2 = $target_dir . basename($_FILES["fileToUploadHcm"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-    $imageFileType2 = strtolower(pathinfo($target_file2, PATHINFO_EXTENSION));
-    $check = getimagesize($_FILES["fileToUploadHn"]["tmp_name"]);
-    $check2 = getimagesize($_FILES["fileToUploadHcm"]["tmp_name"]);
-    if ($check !== false || $check2 !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
+const INPUT_IMG = 'bloomSkyImg';
+const INPUT_VIDEO = 'bloomSkyVideo';
+const IMG_DIR = 'img/';
+const VIDEO_DIR = 'video/';
+const IMG_NAME = 'bloomsky.jpg';
+const VIDEO_NAME = 'bloomsky.mp4';
+const USERNAME = 'weathervn.com';
+const PASSWORD = 'Tai1WvnEmY2Ua49';
+$data = $_POST;
+if (validate($data) && authorise($data['username'], $data['password'])) {
+    if (isset($_FILES[INPUT_IMG]) && $_FILES[INPUT_IMG]['size']) {
+        uploadImage($_FILES[INPUT_IMG], IMG_DIR, IMG_NAME);
     }
+
+    if (isset($_FILES[INPUT_VIDEO]) && $_FILES[INPUT_VIDEO]['size']) {
+        uploadVideo($_FILES[INPUT_VIDEO], VIDEO_DIR, VIDEO_NAME);
+    }
+
+    if (isset($_FILES['postVideo']) && $_FILES['postVideo']['size']) {
+        uploadVideo($_FILES['postVideo'], VIDEO_DIR, 'postVideo.mp4');
+        writeDataToFile('video', $data['post']);
+    }
+    if (isset($_FILES['postImage']) && $_FILES['postImage']['size']) {
+        uploadImage($_FILES['postImage'], IMG_DIR, 'postImage.jpg');
+        writeDataToFile('image', $data['post']);
+    }
+}
+
+function writeDataToFile($type, $text) {
+    $myFile = fopen("postData.txt", "w") or die("Unable to open file!");
+    fwrite($myFile, $type . "\n" . $text);
+    fclose($myFile);
+}
+
+function validate($data) {
+    if (isset($data['submit']) && isset($data['username']) && isset($data['password'])) {
+        return true;
+    }
+    return false;
+}
+
+function uploadImage($file, $dir, $filename) {
+    $imgExtension = strtolower(pathinfo(basename($file["name"]), PATHINFO_EXTENSION));
+
     // Check file size
-    if ($_FILES["fileToUploadHn"]["size"] > 500000 || $_FILES["fileToUploadHcm"]["size"] > 500000) {
+    if ($file["size"] > 20000000) {
         echo "Sorry, your file is too large.";
-        $uploadOk = 0;
+        return false;
     }
 
-// Allow certain file formats
-    $allowType = ['jpg', 'png', 'jpeg', 'gif'];
-    if (!in_array($imageFileType, $allowType) || !in_array($imageFileType2, $allowType)  ) {
+    // Allow certain file formats
+    $allowImgType = ['jpg', 'png', 'jpeg', 'gif'];
+    if (!in_array($imgExtension, $allowImgType)) {
         echo "Sorry, only JPG, JPEG, PNG, GIF & MP$ files are allowed.";
-        $uploadOk = 0;
+        return false;
     }
-
-// Check if $uploadOk is set to 0 by an error
-    if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
+    if (move_uploaded_file($file["tmp_name"], $dir.$filename)) {
+        echo "The file " . basename($file["name"]) . " has been uploaded.";
     } else {
-        if (move_uploaded_file($_FILES["fileToUploadHn"]["tmp_name"], $target_file.'.'.$imageFileType)) {
-            echo "The file " . basename($_FILES["fileToUploadHn"]["name"]) . " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
-        if (move_uploaded_file($_FILES["fileToUploadHcm"]["tmp_name"], $target_file2.'.'.$imageFileType2)) {
-            echo "The file " . basename($_FILES["fileToUploadHcm"]["name"]) . " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
+        echo "Sorry, there was an error uploading your file.";
     }
+}
+
+function uploadVideo($file, $dir, $filename) {
+    $videoExtension = strtolower(pathinfo(basename($file["name"]), PATHINFO_EXTENSION));
+
+    // Check file size
+    if ($file["size"] > 20000000) {
+        echo "Sorry, your file is too large.";
+        return false;
+    }
+    $allowVideoType = ['mp4'];
+    if (!in_array($videoExtension, $allowVideoType)) {
+        echo "Sorry, only MP4 files are allowed.";
+        return false;
+    }
+    if (move_uploaded_file($file["tmp_name"], $dir.$filename)) {
+        echo "The file " . basename($file["name"]) . " has been uploaded.";
+    } else {
+        echo "Sorry, there was an error uploading your file.";
+    }
+}
+
+function authorise($username, $password) {
+    return $username == USERNAME && $password == PASSWORD;
 }
 ?>
 <!DOCTYPE html>
@@ -61,6 +100,7 @@ if (isset($_POST["submit"])) {
         body {
             font-family: "Poppins", sans-serif;
             height: 100vh;
+            background-color: #56baed;
         }
 
         a {
@@ -70,17 +110,19 @@ if (isset($_POST["submit"])) {
             font-weight: 400;
         }
 
-        h2 {
+        h1 {
             text-align: center;
             font-size: 16px;
             font-weight: 600;
             text-transform: uppercase;
             display:inline-block;
             margin: 40px 8px 10px 8px;
-            color: #cccccc;
         }
 
-
+        h1.active {
+            color: #0d0d0d;
+            border-bottom: 2px solid #5fbae9;
+        }
 
         /* STRUCTURE */
 
@@ -98,39 +140,15 @@ if (isset($_POST["submit"])) {
             -webkit-border-radius: 10px 10px 10px 10px;
             border-radius: 10px 10px 10px 10px;
             background: #fff;
-            padding: 30px;
+            margin: 0 auto;
             width: 90%;
-            max-width: 450px;
+            max-width: 800px;
             position: relative;
-            padding: 0px;
             -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
             box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
             text-align: center;
+            padding: 15px 32px;
         }
-
-        #formFooter {
-            background-color: #f6f6f6;
-            border-top: 1px solid #dce8f1;
-            padding: 25px;
-            text-align: center;
-            -webkit-border-radius: 0 0 10px 10px;
-            border-radius: 0 0 10px 10px;
-        }
-
-
-
-        /* TABS */
-
-        h2.inactive {
-            color: #cccccc;
-        }
-
-        h2.active {
-            color: #0d0d0d;
-            border-bottom: 2px solid #5fbae9;
-        }
-
-
 
         /* FORM TYPOGRAPHY*/
 
@@ -168,9 +186,23 @@ if (isset($_POST["submit"])) {
             transform: scale(0.95);
         }
 
-        input[type=text] {
+        input[type=file] {
             background-color: #f6f6f6;
-            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            width: 85%;
+        }
+        select {
+            background-color: #f6f6f6;
+            width: 85%;
+        }
+
+        input[type=text],input[type=password] {
+            background-color: #f6f6f6;
             color: #0d0d0d;
             padding: 15px 32px;
             text-align: center;
@@ -189,16 +221,10 @@ if (isset($_POST["submit"])) {
             border-radius: 5px 5px 5px 5px;
         }
 
-        input[type=text]:focus {
+        input[type=text]:focus, input[type=password]:focus {
             background-color: #fff;
             border-bottom: 2px solid #5fbae9;
         }
-
-        input[type=text]:placeholder {
-            color: #cccccc;
-        }
-
-
 
         /* ANIMATIONS */
 
@@ -310,26 +336,35 @@ if (isset($_POST["submit"])) {
     </style>
 </head>
 <body>
-<main class="container">
-
+<main class="container wrapper">
     <div id="formContent">
         <form action="upload.php" method="post" enctype="multipart/form-data">
         <div class="fadeIn first">
-            <h2>Upload ImageZ</h2>
+            <h1>Upload Image</h1>
         </div>
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-            <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+            <input type="text" id="login" class="fadeIn second" name="username" placeholder="username" required>
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required>
             <div class="form-group">
                 <div class="form-group">
-                    <label for="fileToUploadHn">Ha Noi</label>
-                    <input type="file" name="fileToUploadHn" accept="video/*" class="form-control-file" id="fileToUploadHn">
+                    <label for="bloomSkyImg">Realtime BloomSky Image</label>
+                    <input type="file" name="bloomSkyImg" accept="image/x-png,image/gif,image/jpeg" class="form-control-file" id="bloomSkyImg">
                 </div>
                 <div class="form-group">
-                    <label for="fileToUploadHcm">HCM</label>
-                    <input type="file" name="fileToUploadHcm" accept="video/*" class="form-control-file" id="fileToUploadHcm">
+                    <label for="bloomSkyVideo">Realtime BloomSky Time-lapse</label>
+                    <input type="file" name="bloomSkyVideo" accept="video/mp4" class="form-control-file" id="bloomSkyVideo">
+                </div>
+                <div class="form-group">
+                    <label for="postType">Post Type</label>
+                    <select class="form-control" id="postType" name="postType">
+                        <option value="image" selected>Image</option>
+                        <option value="video">Video</option>
+                    </select>
+                    <input type="file" name="postVideo" id="postVideo" accept="video/mp4" class="form-control-file">
+                    <input type="file" name="postImage" id="postImage" accept="image/x-png,image/gif,image/jpeg" class="form-control-file">
+                    <textarea class="form-control" id="post" name="post" rows="3"></textarea>
                 </div>
             </div>
-            <input type="submit" class="fadeIn fourth" value="Log In">
+            <input type="submit" class="fadeIn fourth" name="submit" value="Log In">
         </form>
     </div>
 </main>
@@ -342,6 +377,25 @@ if (isset($_POST["submit"])) {
     $(".custom-file-input").on("change", function() {
         var fileName = $(this).val().split("\\").pop();
         $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+    $( document ).ready(function() {
+        var select = $('#postType'),
+            image = $('#postImage'),
+            video = $('#postVideo');
+        select.change(function(){
+            if ($(this).val() == 'image') {
+                image.show();
+                image.prop("disabled", false);
+                video.hide();
+                video.prop("disabled", true);
+            } else {
+                image.hide();
+                image.prop("disabled", true);
+                video.show();
+                video.prop("disabled", false);
+            }
+        });
+        select.change();
     });
 </script>
 </body>

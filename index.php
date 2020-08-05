@@ -1,3 +1,17 @@
+<?php
+$type = '';
+$postContent = '';
+if (file_exists("postData.txt")) {
+    if ($myFile = fopen("postData.txt", "r")) {
+        $type = fgets($myFile);
+        $postContent = fgets($myFile);
+        fclose($myFile);
+    }
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,6 +73,12 @@
                 <iframe class="embed-responsive-item" src="https://embed.windy.com/embed2.html?lat=16.215&lon=106.743&detailLat=17.393&detailLon=106.479&width=650&height=650&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=true&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0">
 				</iframe>
             </div>
+            <div class="p-4">
+                <div class="fb-share-button"
+                     data-href="https://embed.windy.com/embed2.html?lat=16.215&lon=106.743&detailLat=17.393&detailLon=106.479&width=650&height=650&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=true&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1"
+                     data-layout="button">
+                </div>
+            </div>
         </div>
 <!--Chỉnh sửa 2 hình RealTime BllomSky Camera-->
         <div class="cover-top">
@@ -97,9 +117,21 @@
             <p class="mt-2 mb-4">Trang web cung cấp dự báo thời tiết dành cho quan sát thiên văn nghiệp dư tại Việt nam</p>
             <div class="cover"></div>
         </div>
-        <div class="">
-            <p>AAG-Cloudwatcher, Saigon Vietnam (coming soon)</p>
-            <iframe src="http://78.23.108.227:10800" width="800" height="1554" scrolling="NO" img="" border="0"> </iframe>
+<!--        <div class="">-->
+<!--            <p>AAG-Cloudwatcher, Saigon Vietnam (coming soon)</p>-->
+<!--            <iframe src="http://78.23.108.227:10800" width="800" height="1554" scrolling="NO" img="" border="0"> </iframe>-->
+<!--        </div>-->
+        <div class="post">
+            <?php if ($postContent != ''): ?>
+                <p class="mb-5 mt-3"><?= $postContent ?></p>
+            <?php endif;?>
+            <?php if ($type != ''): ?>
+                <?php if ($type != 'image'): ?>
+                    <img style="max-height:315px" src="./img/postImage.jpg" alt="">
+                <?php else: ?>
+                    <video class="w-100 h-100 border border-white" src="./video/postVideo.mp4" type="video/mp4" alt="" controls></video>
+                <?php endif;?>
+            <?php endif;?>
         </div>
         <div class="cover mt-3 mb-3"></div>
         <div class="mb-2">
