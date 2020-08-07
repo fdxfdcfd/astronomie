@@ -27,7 +27,7 @@ if (validate($data) && authorise($data['username'], $data['password'])) {
     if (isset($data['post']) &&  isset($data['postType']) && isset($data['postTitle'])) {
         writeDataToFile($data['postType'], $data['postTitle'], $data['post']);
     }
-    header("Location: http://localhost/astronomie/upload.php");
+    header("Location: http://weathervn.com/upload.php");
     die();
 }
 

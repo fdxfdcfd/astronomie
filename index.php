@@ -12,6 +12,7 @@ if (file_exists("postData.txt")) {
         fclose($myFile);
     }
 }
+$reload = isset($_GET['update']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -258,5 +259,18 @@ function fbShare(url, title, descr, image, winWidth, winHeight) {
     window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
 }
 </script>
+<?php if($reload):?>
+<script type="text/javascript">
+    httpGet('bloomSkyLatest.php');
+    setInterval(function(){httpGet('bloomSkyLatest.php')}, 20000);
+    function httpGet(theUrl)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl);
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+</script>
+<?php endif; ?>
 </body>
 </html>
