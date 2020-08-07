@@ -1,56 +1,24 @@
 <?php
-// Check if image file is a actual image or fake image
-if (isset($_POST["submit"])) {
-    $target_dir = "img/";
-    $target_file = $target_dir . basename($_FILES["fileToUploadHn"]["name"]);
-    $target_file2 = $target_dir . basename($_FILES["fileToUploadHcm"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-    $imageFileType2 = strtolower(pathinfo($target_file2, PATHINFO_EXTENSION));
-    $check = getimagesize($_FILES["fileToUploadHn"]["tmp_name"]);
-    $check2 = getimagesize($_FILES["fileToUploadHcm"]["tmp_name"]);
-    if ($check !== false || $check2 !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
-    // Check file size
-    if ($_FILES["fileToUploadHn"]["size"] > 500000 || $_FILES["fileToUploadHcm"]["size"] > 500000) {
-        echo "Sorry, your file is too large.";
-        $uploadOk = 0;
-    }
-
-// Allow certain file formats
-    $allowType = ['jpg', 'png', 'jpeg', 'gif'];
-    if (!in_array($imageFileType, $allowType) || !in_array($imageFileType2, $allowType)  ) {
-        echo "Sorry, only JPG, JPEG, PNG, GIF & MP$ files are allowed.";
-        $uploadOk = 0;
-    }
-
-// Check if $uploadOk is set to 0 by an error
-    if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
-    } else {
-        if (move_uploaded_file($_FILES["fileToUploadHn"]["tmp_name"], $target_file.'.'.$imageFileType)) {
-            echo "The file " . basename($_FILES["fileToUploadHn"]["name"]) . " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
+$type = '';
+$postContent = '';
+$postTitle = '';
+if (file_exists("postData.txt")) {
+    if ($myFile = fopen("postData.txt", "r")) {
+        $type = fgets($myFile);
+        $postTitle = fgets($myFile);
+        while (!feof($myFile)) {
+            $postContent .= fgets($myFile);
         }
-        if (move_uploaded_file($_FILES["fileToUploadHcm"]["tmp_name"], $target_file2.'.'.$imageFileType2)) {
-            echo "The file " . basename($_FILES["fileToUploadHcm"]["name"]) . " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
+        fclose($myFile);
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
         /* BASIC */
 
@@ -61,26 +29,29 @@ if (isset($_POST["submit"])) {
         body {
             font-family: "Poppins", sans-serif;
             height: 100vh;
+            background-color: #56baed;
         }
 
         a {
             color: #92badd;
-            display:inline-block;
+            display: inline-block;
             text-decoration: none;
             font-weight: 400;
         }
 
-        h2 {
+        h1 {
             text-align: center;
             font-size: 16px;
             font-weight: 600;
             text-transform: uppercase;
-            display:inline-block;
+            display: inline-block;
             margin: 40px 8px 10px 8px;
-            color: #cccccc;
         }
 
-
+        h1.active {
+            color: #0d0d0d;
+            border-bottom: 2px solid #5fbae9;
+        }
 
         /* STRUCTURE */
 
@@ -98,43 +69,19 @@ if (isset($_POST["submit"])) {
             -webkit-border-radius: 10px 10px 10px 10px;
             border-radius: 10px 10px 10px 10px;
             background: #fff;
-            padding: 30px;
+            margin: 0 auto;
             width: 90%;
-            max-width: 450px;
+            max-width: 800px;
             position: relative;
-            padding: 0px;
-            -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-            box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+            -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
             text-align: center;
+            padding: 15px 32px;
         }
-
-        #formFooter {
-            background-color: #f6f6f6;
-            border-top: 1px solid #dce8f1;
-            padding: 25px;
-            text-align: center;
-            -webkit-border-radius: 0 0 10px 10px;
-            border-radius: 0 0 10px 10px;
-        }
-
-
-
-        /* TABS */
-
-        h2.inactive {
-            color: #cccccc;
-        }
-
-        h2.active {
-            color: #0d0d0d;
-            border-bottom: 2px solid #5fbae9;
-        }
-
-
 
         /* FORM TYPOGRAPHY*/
 
-        input[type=button], input[type=submit], input[type=reset]  {
+        input[type=button], input[type=submit], input[type=reset] {
             background-color: #56baed;
             border: none;
             color: white;
@@ -144,8 +91,8 @@ if (isset($_POST["submit"])) {
             display: inline-block;
             text-transform: uppercase;
             font-size: 13px;
-            -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
-            box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+            -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+            box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
             -webkit-border-radius: 5px 5px 5px 5px;
             border-radius: 5px 5px 5px 5px;
             margin: 5px 20px 40px 20px;
@@ -156,11 +103,11 @@ if (isset($_POST["submit"])) {
             transition: all 0.3s ease-in-out;
         }
 
-        input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+        input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
             background-color: #39ace7;
         }
 
-        input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+        input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
             -moz-transform: scale(0.95);
             -webkit-transform: scale(0.95);
             -o-transform: scale(0.95);
@@ -168,9 +115,24 @@ if (isset($_POST["submit"])) {
             transform: scale(0.95);
         }
 
-        input[type=text] {
+        input[type=file] {
             background-color: #f6f6f6;
-            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            width: 85%;
+        }
+
+        select {
+            background-color: #f6f6f6;
+            width: 85%;
+        }
+
+        input[type=text], input[type=password] {
+            background-color: #f6f6f6;
             color: #0d0d0d;
             padding: 15px 32px;
             text-align: center;
@@ -189,16 +151,10 @@ if (isset($_POST["submit"])) {
             border-radius: 5px 5px 5px 5px;
         }
 
-        input[type=text]:focus {
+        input[type=text]:focus, input[type=password]:focus {
             background-color: #fff;
             border-bottom: 2px solid #5fbae9;
         }
-
-        input[type=text]:placeholder {
-            color: #cccccc;
-        }
-
-
 
         /* ANIMATIONS */
 
@@ -239,23 +195,46 @@ if (isset($_POST["submit"])) {
         }
 
         /* Simple CSS3 Fade-in Animation */
-        @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-        @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-        @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
         .fadeIn {
-            opacity:0;
-            -webkit-animation:fadeIn ease-in 1;
-            -moz-animation:fadeIn ease-in 1;
-            animation:fadeIn ease-in 1;
+            opacity: 0;
+            -webkit-animation: fadeIn ease-in 1;
+            -moz-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
 
-            -webkit-animation-fill-mode:forwards;
-            -moz-animation-fill-mode:forwards;
-            animation-fill-mode:forwards;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 
-            -webkit-animation-duration:1s;
-            -moz-animation-duration:1s;
-            animation-duration:1s;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
         }
 
         .fadeIn.first {
@@ -298,7 +277,7 @@ if (isset($_POST["submit"])) {
             color: #0d0d0d;
         }
 
-        .underlineHover:hover:after{
+        .underlineHover:hover:after {
             width: 100%;
         }
 
@@ -308,40 +287,100 @@ if (isset($_POST["submit"])) {
             outline: none;
         }
     </style>
+    <script src="https://cdn.tiny.cloud/1/0pbe4n1h7xoxmdruowhqcixsvibpyxx65jo0dp5s6iwm52et/tinymce/5/tinymce.min.js"
+            referrerpolicy="origin"></script>
 </head>
 <body>
-<main class="container">
-
+<main class="container wrapper">
     <div id="formContent">
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-        <div class="fadeIn first">
-            <h2>Upload ImageZ</h2>
-        </div>
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-            <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+        <form action="uploadPost.php" method="post" enctype="multipart/form-data">
+            <div class="fadeIn first">
+                <h1>Upload Image</h1>
+            </div>
+            <input type="text" id="login" class="fadeIn second" name="username" placeholder="username" required>
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required>
             <div class="form-group">
                 <div class="form-group">
-                    <label for="fileToUploadHn">Ha Noi</label>
-                    <input type="file" name="fileToUploadHn" accept="video/*" class="form-control-file" id="fileToUploadHn">
+                    <label for="bloomSkyImg">Realtime BloomSky Image</label>
+                    <input type="file" name="bloomSkyImg" accept="image/x-png,image/gif,image/jpeg"
+                           class="form-control-file" id="bloomSkyImg">
                 </div>
                 <div class="form-group">
-                    <label for="fileToUploadHcm">HCM</label>
-                    <input type="file" name="fileToUploadHcm" accept="video/*" class="form-control-file" id="fileToUploadHcm">
+                    <label for="bloomSkyVideo">Realtime BloomSky Time-lapse</label>
+                    <input type="file" name="bloomSkyVideo" accept="video/mp4" class="form-control-file"
+                           id="bloomSkyVideo">
+                </div>
+                <div class="form-group">
+                    <label for="postType">Post Type</label>
+                    <select class="form-control" id="postType" name="postType">
+                        <option value="image" <?= $type == 'image' ? 'selected' : '' ?>>Image</option>
+                        <option value="video" <?= $type != 'image' ? 'selected' : '' ?>>Video</option>
+                    </select>
+                    <input type="file" name="postVideo" id="postVideo" accept="video/mp4" class="form-control-file">
+                    <input type="file" name="postImage" id="postImage" accept="image/x-png,image/gif,image/jpeg"
+                           class="form-control-file">
+                    <div class="form-group">
+                        <label for="postTitle">Post Title</label>
+                        <input class="form-control" id="postTitle" name="postTitle" value="<?=$postTitle?>"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="post">Post Conent</label>
+                        <textarea class="form-control" id="post" name="post" rows="3"><?= $postContent ?></textarea>
+                    </div>
                 </div>
             </div>
-            <input type="submit" class="fadeIn fourth" value="Log In">
+            <input type="submit" class="fadeIn fourth" name="submit" value="Log In">
         </form>
     </div>
 </main>
 
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 <script>
     // Add the following code if you want the name of the file appear on select
-    $(".custom-file-input").on("change", function() {
+    $(".custom-file-input").on("change", function () {
         var fileName = $(this).val().split("\\").pop();
         $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+    $(document).ready(function () {
+        var select = $('#postType'),
+            image = $('#postImage'),
+            video = $('#postVideo');
+        select.change(function () {
+            if ($(this).val() == 'image') {
+                image.show();
+                image.prop("disabled", false);
+                video.hide();
+                video.prop("disabled", true);
+            } else {
+                image.hide();
+                image.prop("disabled", true);
+                video.show();
+                video.prop("disabled", false);
+            }
+        });
+        select.change();
+    });
+</script>
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons',
+
+        menubar: 'file edit view insert format tools table help',
+        toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+        toolbar_sticky: true,
+        toolbar_mode: 'floating numlist bullist',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        height: 600,
+        inline_styles: true
     });
 </script>
 </body>
