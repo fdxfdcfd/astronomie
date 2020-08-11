@@ -1,18 +1,11 @@
 <?php
-$type = '';
-$postContent = '';
-$postTitle = '';
-if (file_exists("postData.txt")) {
-    if ($myFile = fopen("postData.txt", "r")) {
-        $type = fgets($myFile);
-        $postTitle = fgets($myFile);
-        while (!feof($myFile)){
-        $postContent .= fgets($myFile);
-        }
-        fclose($myFile);
-    }
-}
-$reload = isset($_GET['update']);
+include_once 'app/code/Post/Model/Post.php';
+$post = new \Post\Model\Post();
+$p = 1;
+$posts = $post->getList('', 10, $p, 'DESC');
+$postData = reset($posts);
+$time = strtotime($postData->updated_at);
+$postData->updated_at = date('F j, Y',$time);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +20,7 @@ $reload = isset($_GET['update']);
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <div class="mb-3">Notice: Vietnam Weather Page - Under Construction</div>
     <div class="cover"></div>
-    <header class="masthead mb-5 mt-5">
+    <header class="masthead mt-5">
         <div class="inner">
 			<!--Đổi dòng tiêu đề to của page-->
             <h3 class="masthead-brand">Vietnam Weather <br/>for Amateur Astronomy Observatory</h3>
@@ -36,16 +29,37 @@ $reload = isset($_GET['update']);
                 <a class="nav-link" href="#">Features</a>
                 <a class="nav-link" href="#">Contact</a>
             </nav>
+            <div class="masthead-brand">
+                <!--Chỉnh sửa câu chú thích Page-->
+                <p class="mt-2">Trang web cung cấp dự báo thời tiết dành cho quan sát thiên văn nghiệp dư tại Việt nam</p>
+            </div>
         </div>
     </header>
+    <div class="cover mb-4"></div>
     <main role="main" class="text-center">
-        <div class="cover-top">
-            <div class="cover mb-4"></div>
-			<!--Chỉnh sửa câu chú thích Page-->
-            <p class="mt-2 mb-4">Trang web cung cấp dự báo thời tiết dành cho quan sát thiên văn nghiệp dư tại Việt nam</p>
-            <div class="cover"></div>
+        <div class="row text-white p-4 text-left">
+            <?php if ($postData): ?>
+                <div class="col-md-12">
+                    <div class="col-md-12" style="background: #333;">
+                        <div class="card flex-md-row mb-4 box-shadow h-md-250 text-white" style="background: #333;">
+                            <div class="card-body d-flex flex-column align-items-start w-50">
+                                <strong class="d-inline-block mb-2 text-primary">Hot News</strong>
+                                <h3 class="mb-0">
+                                    <a class="text-white" href="#"><?= $postData->title ?></a>
+                                </h3>
+                                <div class="mb-1 text-muted"><?= $postData->updated_at ?></div>
+                                <p class="card-text mb-auto"><?= $postData->short_description ?></p>
+                                <p class="card-text mb-auto"><?= $postData->content ?></p>
+                                <a href="#">Continue reading</a>
+                            </div>
+                            <div class="p-4 w-50">
+                                <img class="w-100 card-img-right flex-auto d-none d-md-block" data-src="./img/<?=$postData->image ?>" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="./img/<?=$postData->image ?>" data-holder-rendered="true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endif;?>
         </div>
-
 <!--Code chia thành 2 hình lớn width=100-->
         <div class="d-flex flex-row flex-wrap mt-2 mb-2">
             <div class="p-4 w-50">
@@ -123,21 +137,7 @@ $reload = isset($_GET['update']);
 <!--            <p>AAG-Cloudwatcher, Saigon Vietnam (coming soon)</p>-->
 <!--            <iframe src="http://78.23.108.227:10800" width="800" height="1554" scrolling="NO" img="" border="0"> </iframe>-->
 <!--        </div>-->
-        <div class="post">
-            <?php if ($postTitle != ''): ?>
-                <div class="text-left"><?= $postTitle ?></div>
-            <?php endif;?>
-            <?php if ($postContent != ''): ?>
-                <div class="mt-3"><?= $postContent ?></div>
-            <?php endif;?>
-            <?php if ($type != ''): ?>
-                <?php if ($type != 'image'): ?>
-                    <img style="max-height:315px" src="./img/postImage.jpg" alt="">
-                <?php else: ?>
-                    <video class="w-100 h-100 border border-white" src="./video/postVideo.mp4" type="video/mp4" alt="" controls></video>
-                <?php endif;?>
-            <?php endif;?>
-        </div>
+        
         <div class="cover mt-3 mb-3"></div>
         <div class="mb-2">
             <p class="mt-2">Magnitude of the sky background in Magn./Arc.sec²</p>
@@ -170,21 +170,24 @@ $reload = isset($_GET['update']);
         <div class="mb-5">
             <p class="mt-5 mb-5">Seeing conditions Saigon, Vietnam</p>
 			
-			<!--Link tọa độ cũ là https://clearoutside.com/forecast/51.17/4.31-->
-			
-            <a href="https://clearoutside.com/forecast/10.81/106.68"><img src="https://clearoutside.com/forecast_image_large/10.81/106.68/forecast.png"></a>
+			<!--Link tọa độ cũ là https://clearoutside.com/forecast/51.17/4.31-->			
+            <a href="https://clearoutside.com/forecast/10.81/106.68"><img src="https://clearoutside.com/forecast_image_large/10.81/106.68/forecast.png"></a>			
         </div>
-		<div class="cover mt-3 mb-3"></div>
-		<div class="fb-share-button" data-href="http://weathervn.com/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fweathervn.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
+		<div class="fb-share-button" 
+		data-href="https://clearoutside.com/forecast_image_large/10.81/106.68/forecast.png"
+        data-layout="button">
+         </div>
+		 <div class="cover mt-3 mb-3"></div>
+		
+		
         <div class="mt-5 d-flex flex-row text-left contact p-2">
             <div class="w-50">
-                <p>Active</p>
+                <p>Lastest News</p>
                 <div class="cover"></div>
-                <ul class="">
-                    <li class="">Event</li>
-                    <!--<li class="">Cras justo odio</li>
-                    <li class="">Cras justo odio</li>
-                    <li class="">Cras justo odio</li>-->
+                <ul class="text-white">
+                   <?php foreach ($posts as $post):?>
+                       <li class=""><?= $post->title ?></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
             <div class="w-50">
@@ -259,18 +262,5 @@ function fbShare(url, title, descr, image, winWidth, winHeight) {
     window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
 }
 </script>
-<?php if($reload):?>
-<script type="text/javascript">
-    httpGet('bloomSkyLatest.php');
-    setInterval(function(){httpGet('bloomSkyLatest.php')}, 20000);
-    function httpGet(theUrl)
-    {
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", theUrl);
-        xmlHttp.send( null );
-        return xmlHttp.responseText;
-    }
-</script>
-<?php endif; ?>
 </body>
 </html>
