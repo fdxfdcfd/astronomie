@@ -13,7 +13,7 @@ if (!isset($_GET['id'])) {
     die;
 }
 include '../app/code/Post/Model/Post.php';
-$postModel = new \Post\Model\Post();
+$postModel = new \Post\Model\Category();
 $post = $postModel->get($_GET['id']);
 ?>
 

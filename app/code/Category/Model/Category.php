@@ -3,7 +3,7 @@
 namespace Post\Model;
 
 include 'ResourceModel/Post.php';
-class Post
+class Category
 {
     public function get($id)
     {

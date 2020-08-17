@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 }
 if (isset($_POST['submit']) && isset($_POST['title']) && isset($_POST['short_description']) && !empty($_POST['content'])) {
     include '../app/code/Post/Model/Post.php';
-    $postModel = new \Post\Model\Post();
+    $postModel = new \Post\Model\Category();
     if (isset($_FILES['image'])) {
         $imgName = uploadImage($_FILES['image'], '..'.DIRECTORY_SEPARATOR . 'img' .DIRECTORY_SEPARATOR, basename($_FILES['image']["name"]));
         if ($imgName) {

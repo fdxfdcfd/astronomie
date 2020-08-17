@@ -1,6 +1,6 @@
 <?php
 include_once 'app/code/Post/Model/Post.php';
-$post = new \Post\Model\Post();
+$post = new \Post\Model\Category();
 $p = 1;
 $posts = $post->getList('', 10, $p, 'DESC');
 $postData = reset($posts);

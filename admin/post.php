@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 }
 $username = $_SESSION['username'];
 include '../app/code/Post/Model/Post.php';
-$post = new \Post\Model\Post();
+$post = new \Post\Model\Category();
 $p = 1;
 if(isset ($_GET['p'])) {
     $p = $_GET['p'];

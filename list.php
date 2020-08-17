@@ -1,9 +1,9 @@
 <?php
 
-use Post\Model\Post;
+use Post\Model\Category;
 
 include_once 'app/code/Post/Model/Post.php';
-$post = new Post();
+$post = new Category();
 $p = 1;
 $posts = $post->getList('', 10, $p, 'DESC');
 ?>

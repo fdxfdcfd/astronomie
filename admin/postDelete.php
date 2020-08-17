@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 }
 if (isset($_GET['post_id']) && $_GET['post_id']) {
     include '../app/code/Post/Model/Post.php';
-    $postModel = new \Post\Model\Post();
+    $postModel = new \Post\Model\Category();
     $postModel->delete($_GET['post_id']);
 
 }
